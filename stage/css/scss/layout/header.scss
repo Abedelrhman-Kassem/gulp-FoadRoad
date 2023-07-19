@@ -1,0 +1,21 @@
+@use "../variable/variables.scss" as *;
+
+.navbar {
+  font-size: 16px;
+  .navbar-brand {
+    .h1-logo {
+      color: $mainGreen;
+      .logo-span {
+        color: $mainYellow;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .container-fluid {
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+}

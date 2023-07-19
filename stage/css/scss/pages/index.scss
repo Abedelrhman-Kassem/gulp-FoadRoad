@@ -1,0 +1,139 @@
+@use "../variable/variables.scss" as *;
+
+// Start Landing
+.landing {
+  .info {
+    .play-icon {
+      color: $mainGreen;
+    }
+  }
+  .image-holder {
+    .order {
+      left: 0px;
+      top: 0;
+      transform: translate(-50%, 50%);
+    }
+    .card {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+      width: 350px;
+      .stars {
+        .star {
+          color: $mainYellow;
+        }
+      }
+      .price {
+        color: $mainGreen;
+        font-size: 20px;
+      }
+    }
+  }
+}
+// End Landing
+
+// Start Simple
+section.simple {
+  .container {
+    .heading-p {
+      max-width: 200px;
+    }
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $blurWhite;
+      width: 95%;
+      top: 5%;
+      left: 5%;
+      height: 80%;
+      z-index: -1;
+      border-radius: 20px;
+    }
+
+    .images {
+      img {
+        width: 40%;
+      }
+    }
+    .info {
+      .downloads {
+        img {
+          width: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+// End Simple
+// Start Features
+
+section.feature {
+  .container {
+    .heading-p {
+      max-width: 500px;
+    }
+  }
+}
+
+// End Features
+// Start Works
+section.works {
+  .container {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $blurWhite;
+      width: 70%;
+      top: 0;
+      left: 0%;
+      height: 100%;
+      z-index: -1;
+      border-radius: 20px;
+    }
+    .mint {
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translate(-50%, -50%);
+    }
+    .info {
+      .box {
+        h3 {
+          span {
+            color: $mainGreen;
+          }
+        }
+        p {
+          max-width: 300px;
+        }
+      }
+    }
+    .image {
+      .overlay {
+        border-radius: 30px;
+      }
+      .order {
+        right: 30px;
+        top: 30px;
+      }
+      .box {
+        position: absolute;
+        background-color: white;
+        width: 80%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        h3 {
+          span {
+            color: $mainYellow;
+          }
+        }
+      }
+    }
+  }
+}
+// End Works

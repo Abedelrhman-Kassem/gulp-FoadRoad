@@ -1,2 +1,8 @@
-mixin buttonLink(href)
-    a(class='common-a' href=href)
+mixin buttonLink(href, content, classes)
+    a(class='common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center' class=classes, href=href) #{content}
+
+mixin overlay(radius)
+    div(class='overlay' style=radius)
+
+mixin orderCompelete 
+     div(class='order opensans fw-bold rounded-pill p-3 d-flex align-items-center') #[i(class='order-icon me-2 fs-4 fa-solid fa-circle-check') ] Order Compelete

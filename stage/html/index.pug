@@ -1,8 +1,94 @@
 doctype html
+include pug/components/mixins
 html(lang="en")
     head
         include pug/links/styles
         include pug/links/fonts
     body 
         include pug/layout/header
+        section(class='landing')
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='info col-lg-6')
+                        h1(class='heading sen fw-bolder display-3') Order Your Food & Enjoy The Taste
+                        p(class='text-dark lh-lg' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                        div(class='buttons d-flex align-items-center justify-content-start')
+                            +buttonLink('#','Order Now','')
+                            div(class='watch opensans fw-semibold d-flex align-items-center ms-3') #[i(class='play-icon fa-solid fa-play mx-3')] watch
+                    div(class='image-holder relative d-none d-lg-block col-5 p-0')
+                        img(src="images/main-landing-home.png",class='h-100', alt="")
+                        +overlay('border-bottom-left-radius: 40px;border-top-left-radius: 40px;') 
+                        +orderCompelete
+                        div(class='card px-2')
+                            div(class='row g-0 d-flex align-items-center')
+                                div(class='col-md-4')
+                                    img(src="images/card-landing-home.png", alt="")
+                                div(class='col-md-8')
+                                    div(class='card-body')
+                                        div(class='card-title sen fw-bold') Chicken Teriyaki Sauce
+                                        div(class='stars my-2')
+                                            <i class="star fa-solid fa-star"></i>
+                                            <i class="star fa-solid fa-star"></i>
+                                            <i class="star fa-solid fa-star"></i>
+                                            <i class="star fa-solid fa-star"></i>
+                                            <i class="star fa-solid fa-star"></i>
+                                        div(class='price jost') $7.99
+        
+        section(class='simple')
+            div(class='container')
+                div(class='row d-flex align-items-center')
+                    div(class='images mb-3 col-12 col-md-6 text-center')
+                        img(src="images/simple1-home.png",class='me-4', alt="")
+                        img(src="images/simple2-home.png", alt="")
+                    div(class='info col-12 col-md-6')
+                        h1(class='heading sen fw-bolder display-4') Simple Way to Order Your Food Faster
+                        p(class='content opensans fw-regular text-dark lh-lg' style='--bs-text-opacity: .6') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='downloads')
+                            img(src="images/google-play-badge.png", alt="")
+                            img(src="images/app-store-badge.png", alt="")
+        
+        section(class='feature')
+            div(class='container')
+                h1(class='heading sen fw-bolder text-center display-4') What we Feature
+                p(class='heading-p lh-lg text-dark opensans fw-regular text-center mx-auto my-5' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                div(class='row align-items-center text-center')
+                    div(class='box col-12 col-sm-6 col-lg-4 ')
+                        img(src="images/feature1-home.png",class='mw-100' alt="", srcset="")
+                        h3(class='sen fw-bold my-3') The Best Courier
+                        p(class='text-dark lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    div(class='box col-12 col-sm-6 col-lg-4 ')
+                        img(src="images/feature2-home.png",class='mw-100' alt="", srcset="")
+                        h3(class='sen fw-bold my-3') Easy To Use
+                        p(class='text-dark lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    div(class='box col-12 col-sm-6 col-lg-4')
+                        img(src="images/feature3-home.png",class='mw-100' alt="", srcset="")
+                        h3(class='sen fw-bold my-3') 24/7 Support
+                        p(class='text-dark lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        
+        section(class='works')
+            div(class='container py-5')
+                img(src="images/Mint.png",class='mint' alt="")
+                div(class='row align-items-center')
+                    div(class='info col-12 col-md-5')
+                        h2(class='heading sen display-5 mb-5') How it Works
+                        
+                        div(class='box mb-5')
+                            h3(class='sen fw-bold') #[span 01] Choose Your Meals
+                            p(class='opensans text-dark lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        
+                        div(class='box mb-5')
+                            h3(class='sen fw-bold') #[span 02] Pay For The Orders
+                            p(class='opensans text-dark lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        
+                        div(class='box mb-5')
+                            h3(class='sen fw-bold') #[span 03] Delivered For Free
+                            p(class='opensans text-dark lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    div(class='image col-12 col-md-6 ms-auto relative p-0')
+                        img(src="images/works-home.png", alt="")
+                        +overlay('border-radius: 30px;')
+                        +orderCompelete
+                        div(class='box p-4 shadow rounded text-center')
+                            h3(class='sen fw-bold h3') #[span(class='h2 fw-bold') 800K+] Total Downloads
+                            p(class='text-dark lh-lg opensans' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+
         include pug/links/scripts

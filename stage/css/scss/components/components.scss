@@ -1,0 +1,75 @@
+@use "../variable/variables.scss" as *;
+
+img {
+  max-width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.common-a {
+  background-image: $mainLinear;
+  padding: 20px;
+  box-shadow: $mainShadow;
+  height: 51px;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .navbar .common-a {
+    width: 120px;
+    position: absolute;
+  }
+}
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.img {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $mainoverlay;
+}
+
+.order {
+  position: absolute;
+  background-color: white;
+  .order-icon {
+    color: $mainGreen;
+  }
+}
+
+// Fonts
+
+.sen {
+  font-family: "sen", sans-serif;
+}
+.opensans {
+  font-family: "open sans", sans-serif;
+}
+.jost {
+  font-family: "jost", sans-serif;
+}
+.poppins {
+  font-family: "poppins", sans-serif;
+}
+.worksans {
+  font-family: "work sans", sans-serif;
+}
+.roboto {
+  font-family: "roboto", sans-serif;
+}
