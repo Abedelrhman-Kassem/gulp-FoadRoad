@@ -12,30 +12,35 @@ img {
   position: relative;
 }
 
+.navbar-brand {
+  width: fit-content;
+  .h1-logo {
+    color: $mainGreen;
+  }
+}
+
 .common-a {
   background-image: $mainLinear;
   padding: 20px;
-  box-shadow: $mainShadow;
+  box-shadow: 15px 12px 50px 0px $mainGreen;
   height: 51px;
-  right: 0;
+  width: fit-content;
 }
 
 @media (min-width: 992px) {
   .navbar .common-a {
     width: 120px;
     position: absolute;
+    right: 0;
   }
 }
 
 section {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: $section-top;
+  padding-bottom: $section-bottom;
   position: relative;
 }
 
-.img {
-  position: relative;
-}
 .overlay {
   position: absolute;
   left: 0;
@@ -47,10 +52,18 @@ section {
 
 .order {
   position: absolute;
-  background-color: white;
+  background-color: $white;
   .order-icon {
     color: $mainGreen;
   }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.yellow {
+  color: $mainYellow;
 }
 
 // Fonts

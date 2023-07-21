@@ -27,11 +27,11 @@ html(lang="en")
                                     div(class='card-body')
                                         div(class='card-title sen fw-bold') Chicken Teriyaki Sauce
                                         div(class='stars my-2')
-                                            <i class="star fa-solid fa-star"></i>
-                                            <i class="star fa-solid fa-star"></i>
-                                            <i class="star fa-solid fa-star"></i>
-                                            <i class="star fa-solid fa-star"></i>
-                                            <i class="star fa-solid fa-star"></i>
+                                            <i class="star fa-solid fa-star yellow"></i>
+                                            <i class="star fa-solid fa-star yellow"></i>
+                                            <i class="star fa-solid fa-star yellow"></i>
+                                            <i class="star fa-solid fa-star yellow"></i>
+                                            <i class="star fa-solid fa-star yellow"></i>
                                         div(class='price jost') $7.99
         
         section(class='simple')
@@ -44,8 +44,8 @@ html(lang="en")
                         h1(class='heading sen fw-bolder display-4') Simple Way to Order Your Food Faster
                         p(class='content opensans fw-regular text-dark lh-lg' style='--bs-text-opacity: .6') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
                         div(class='downloads')
-                            img(src="images/google-play-badge.png", alt="")
-                            img(src="images/app-store-badge.png", alt="")
+                            img(src="images/google-play-badge.png", class='pointer', alt="")
+                            img(src="images/app-store-badge.png", class='pointer', alt="")
         
         section(class='feature')
             div(class='container')
@@ -67,7 +67,7 @@ html(lang="en")
         
         section(class='works')
             div(class='container py-5')
-                img(src="images/Mint.png",class='mint' alt="")
+                img(src="images/Mint.png",class='mint d-none d-sm-block' alt="")
                 div(class='row align-items-center')
                     div(class='info col-12 col-md-5')
                         h2(class='heading sen display-5 mb-5') How it Works
@@ -91,4 +91,263 @@ html(lang="en")
                             h3(class='sen fw-bold h3') #[span(class='h2 fw-bold') 800K+] Total Downloads
                             p(class='text-dark lh-lg opensans' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
 
+        section(class='menu')
+            div(class='container')
+                h1(class='heading display-4 mb-5 sen text-center') Our Menus
+                div(class='boxs d-flex align-items-center justify-content-center justify-content-lg-between flex-wrap gap-3')
+                    div(class='box pointer text-center') 
+                        img(src='images/pizza.png', class='my-5')
+                        h3(class='sen fw-bold') Pizza #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+                    div(class='box pointer text-center') 
+                        img(src='images/rice.png', class='my-5')
+                        h3(class='sen fw-bold') Asian #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+                    div(class='box pointer text-center') 
+                        img(src='images/burger.png', class='my-5')
+                        h3(class='sen fw-bold') Burger #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+                    div(class='box pointer text-center') 
+                        img(src='images/drink.png', class='my-5')
+                        h3(class='sen fw-bold') Drink #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+                    div(class='box pointer text-center') 
+                        img(src='images/salad.png', class='my-5')
+                        h3(class='sen fw-bold') Salad #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+                    div(class='box pointer text-center') 
+                        img(src='images/bakery.png', class='my-5')
+                        h3(class='sen fw-bold') Bakery #[i(class='menu-icon d-none fa-solid fa-angle-right')]
+
+        section(class='delicious')
+            div(class='container')
+                div(class='heading mb-5 d-flex align-items-center justify-content-between')
+                    h1(class='sen display-3') Delicious Food For You
+                    div(class='arrows display-5 d-flex gap-3')
+                        i(class='slider-arrow pointer py-1 px-3 rounded fa-solid fa-angle-left')
+                        i(class='slider-arrow pointer py-1 px-3 rounded fa-solid fa-angle-right')
+                div(class='cards d-flex justify-content-center flex-wrap gap-5')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-1.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow me-3')
+                                span(class='rate') (5.0)
+                            h5(class='fw-bold sen') Grilled Salmon Fillet
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $10.99
+                                +buttonLink('#','Add to Cart', 'px-1')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-2.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow me-3')
+                                span(class='rate') (5.0)
+                            h5(class='fw-bold sen') Chicken Teriyaki Sauce
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $5.99
+                                +buttonLink('#','Add to Cart', '')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-3.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow me-3')
+                                span(class='rate') (5.0)
+                            h5(class='fw-bold sen') Cheese Stuffed Burgers
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $8.99
+                                +buttonLink('#','Add to Cart', '')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-4.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow me-3')
+                                span(class='rate') (5.0)
+                            h5(class='fw-bold sen') Seafood Salad
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $9.99
+                                +buttonLink('#','Add to Cart', '')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-5.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow me-3')
+                                span(class='rate') (5.0)
+                            h5(class='fw-bold sen') Salad With Calamari
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $7.99
+                                +buttonLink('#','Add to Cart', '')
+                
+                    div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='image-holder relative')
+                            img(src="images/delicious-6.png", alt="")
+                            +overlay('')
+                        div(class='card-body')
+                            div(class='stars my-3')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                i(class='star fa-solid fa-star yellow')
+                                span(class='rate ms-3') (5.0)
+                            h5(class='fw-bold sen') Baked Mushrooms
+                            p(class='opensans fw-regular text-dark text-truncate', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            div(class='d-flex align-items-center justify-content-between mt-4')
+                                h5(class='price jost fw-bold m-0') $6.99
+                                +buttonLink('#','Add to Cart', '')
+
+        section(class='customers')
+            div(class='container')
+                img(src="images/Mint.png",class='mint d-none d-sm-block' alt="")
+                div(class='content row align-items-center justify-content-between')
+                    div(class='image-holder col-12 col-lg-5')
+                        img(src="images/customers-1.png", alt="")
+                    div(class='info col-12 col-lg-6')
+                        h1(class='heading mt-5 display-4 sen') What Customers Say About us
+                        p(class='opensans text-dark lh-lg fw-regular my-5', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='card border-0 relative m-auto m-md-0 text-center text-md-start' style='max-width: 400px;')
+                            div(class='row g-0')
+                                div(class='col-md-4 d-flex align-items-center justify-content-center')
+                                    img(src="images/customers-2.png", alt="")
+                                div(class='col-md-8')
+                                    div(class='card-body')
+                                        h5(class='card-title') Mohamed Mostafa 
+                                        p(class='card-text') #[small(class='text-body-secondry')] Food Lovers
+                                        div(class='stars')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            span(class='rate ms-3') (5.0)
+
+        section(class='express')
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='info col-12 col-lg-5')
+                        h1(class='heading display-4 mb-5 sen') Express food oredering with delivery
+                        form
+                            div(class='form-floating mb-3 opensans')
+                                i(class='icon fa-solid fa-user fa-lg')
+                                input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingName', placeholder='Name')
+                                label(for="floatingName") Name
+
+                            div(class='form-floating mb-3 opensans')
+                                i(class='icon fa-solid fa-location-dot fa-lg')
+                                input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingAddress', placeholder='Address')
+                                label(for="floatingAddress") Address
+
+                            div(class='form-floating mb-3 opensans')
+                                i(class='icon fa-regular fa-envelope fa-lg')
+                                input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='email', id='floatingEmail', placeholder='Email')
+                                label(for="floatingName") Email
+
+                            div(class='form-floating mb-3 opensans')
+                                i(class='icon fa-solid fa-phone-flip fa-lg')
+                                input(class='form-control  p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingPhone', placeholder='Phone')
+                                label(for="floatingPhone") Phone
+                            
+                            +buttonLink('#','Register Now', 'd-inline')
+
+                    div(class='image-holder d-none d-lg-flex col-lg-6')
+                        img(src="images/express-home.png", alt="")
+        
+        section(class='partner')
+            div(class='container')
+                img(src='images/Mint.png', class='mint d-none d-sm-block', alt='')
+                h1(class='heading sen display-4 mb-5 text-center') Want to Join Partnership?
+                div(class='boxs gap-5 row align-items-center justify-content-center justify-content-md-between')
+                    div(class='box p-4 p-sm-5 col-12 col-lg-5')
+                        div(class='image-holder relative')
+                            img(src="images/partner-1.png", alt="")
+                            +overlay('border-radius: 20px')
+                        div(class='info gap-4 flex-column flex-sm-row justify-content-center  mt-4 d-flex align-items-center justify-content-sm-between')
+                            h5(class='title m-0 fw-bold sen') Join Courier
+                            +buttonLink('#', 'Read More', '')
+                    div(class='box p-4 p-sm-5 col-12 col-lg-5')
+                        div(class='image-holder relative')
+                            img(src="images/partner-2.png", alt="")
+                            +overlay('border-radius: 20px')
+                        div(class='info gap-4 flex-column flex-sm-row justify-content-center  mt-4 d-flex align-items-center justify-content-sm-between')
+                            h5(class='title m-0 fw-bold sen') Join Merchant
+                            +buttonLink('#', 'Read More', '')
+
+        section(class='articles')
+            div(class='container')
+                h1(class='heading my-5 sen display-4 text-center') Articles For Food Lovers!
+                div(class='boxs d-flex flex-wrap justify-content-center justify-content-xl-between gap-3')
+                
+                    div(class='card overflow-hidden border-0 shadow-lg') 
+                        div(class='image-holder relative')
+                            div(class='date bg-white rounded-pill d-flex align-items-center gap-3 p-3 bg')
+                                i(class='fa-solid fa-calendar-days icon')
+                                h6(class='sen fw-bold title m-0') 24 April 2023
+                            img(src='images/article-1.png')
+                            +overlay('')
+                        div(class='card-body')
+                            h5(class='card-title my-3') Balance Of Proteins . . .
+                            p(class='card-text text-black lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            +buttonLink('#', 'Read More', 'my-4')
+                
+                    div(class='card overflow-hidden border-0 shadow-lg') 
+                        div(class='image-holder relative')
+                            div(class='date bg-white rounded-pill d-flex align-items-center gap-3 p-3 bg')
+                                i(class='fa-solid fa-calendar-days icon')
+                                h6(class='sen fw-bold title m-0') 23 April 2023
+                            img(src='images/article-2.png')
+                            +overlay('')
+                        div(class='card-body')
+                            h5(class='card-title my-3') The Characteristics Of . . .
+                            p(class='card-text text-black lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            +buttonLink('#', 'Read More', 'my-4')
+                
+                    div(class='card overflow-hidden border-0 shadow-lg') 
+                        div(class='image-holder relative')
+                            div(class='date bg-white rounded-pill d-flex align-items-center gap-3 p-3 bg')
+                                i(class='fa-solid fa-calendar-days icon')
+                                h6(class='sen fw-bold title m-0') 20 April 2023
+                            img(src='images/article-1.png')
+                            +overlay('')
+                        div(class='card-body')
+                            h5(class='card-title my-3') The Characteristics Of . . .
+                            p(class='card-text text-black lh-lg opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                            +buttonLink('#', 'Read More', 'my-4')
+
+       
+        include pug/layout/footer
         include pug/links/scripts

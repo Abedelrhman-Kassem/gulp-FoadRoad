@@ -1,0 +1,31 @@
+@use "../variable/variables.scss" as *;
+
+footer.footer {
+  padding-top: $section-top;
+  .mint {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+  }
+  nav {
+    a {
+      width: fit-content;
+    }
+  }
+  .socials {
+    .social-links {
+      background-color: $mainGreen;
+      width: 40px;
+      height: 40px;
+      .icon {
+        color: $white;
+      }
+    }
+  }
+  .apps {
+    img {
+      width: 50%;
+    }
+  }
+}

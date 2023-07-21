@@ -58,4 +58,12 @@ function watching(cb) {
   gulp.watch("stage/js/**/*.js", convertJs);
 }
 
+function minifyImages(cb) {
+  cb();
+  return gulp
+    .src("dist/images/*")
+    .pipe(imagemin())
+    .pipe(gulp.dest("dist/pictures/"));
+}
+exports.images = minifyImages;
 exports.default = gulp.parallel(connectServer, watching);

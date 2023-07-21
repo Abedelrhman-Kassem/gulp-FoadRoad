@@ -2,12 +2,10 @@ include ../components/mixins
 div(class='container')
     nav(class='navbar navbar-expand-lg')
         div(class='container-fluid')
-            a(class='navbar-brand d-flex align-items-center', href='#')
-                img(class='img-logo', src="images/logo.png")
-                h1(class='h1-logo sen fw-bold') Foad#[span(class='logo-span') Road]
+            +logo
             button(class='navbar-toggler', type='button', data-bs-toggle='collapse', data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
                 span(class='navbar-toggler-icon')
-            div(class='collapse navbar-collapse', id='navbarSupportedContent')
+            div(class='collapse navbar-collapse ps-lg-5', id='navbarSupportedContent')
                 ul(class="navbar-nav")
                     li(class="nav-item")
                         a(class="nav-link opensans active" aria-current="page" href="#") Home

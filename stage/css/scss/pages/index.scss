@@ -19,11 +19,6 @@
       bottom: 0;
       transform: translate(-50%, 50%);
       width: 350px;
-      .stars {
-        .star {
-          color: $mainYellow;
-        }
-      }
       .price {
         color: $mainGreen;
         font-size: 20px;
@@ -61,7 +56,6 @@ section.simple {
       .downloads {
         img {
           width: 50%;
-          cursor: pointer;
         }
       }
     }
@@ -122,7 +116,7 @@ section.works {
       }
       .box {
         position: absolute;
-        background-color: white;
+        background-color: $white;
         width: 80%;
         bottom: 0;
         left: 50%;
@@ -137,3 +131,136 @@ section.works {
   }
 }
 // End Works
+// Start Menu
+section.menu {
+  .boxs {
+    .box {
+      height: 270px;
+      background-color: $blurWhite;
+      border-radius: 20px;
+      width: 170px;
+      transition: 0.3s;
+      &:hover {
+        background-color: $mainGreen;
+      }
+      &:hover .menu-icon {
+        display: inline-block !important;
+      }
+      &:hover h3 {
+        color: $white;
+      }
+      h3 {
+        transition: 0.3s;
+      }
+    }
+  }
+}
+// End Menu
+// Start Delicious
+
+section.delicious {
+  .heading {
+    .slider-arrow {
+      background-color: $blurWhite;
+      transition: 0.3s;
+      &:hover {
+        background-color: $mainGreen;
+        color: $white;
+      }
+    }
+  }
+  .cards {
+    .card {
+      .common-a {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+      }
+    }
+  }
+}
+
+// End Delicious
+// Start Customers
+
+section.customers {
+  .mint {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%);
+  }
+}
+
+// End Customers
+// Start Express
+
+section.express {
+  form {
+    .form-control:focus {
+      border-color: $mainGreen;
+    }
+    .form-control:focus ~ label {
+      transform: translate(2rem, -2rem);
+    }
+    label {
+      transform: translate(2rem, 0rem);
+    }
+    .icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// End Express
+// Start Partner
+
+section.partner {
+  .mint {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-80%);
+  }
+  .boxs {
+    .box {
+      background-color: $blurWhite;
+      border-radius: 20px;
+      .image-holder {
+        width: fit-content;
+        margin: auto;
+      }
+      .info {
+        .common-a {
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
+      }
+    }
+  }
+}
+
+// End Partner
+// Start Articles
+
+section.articles {
+  .boxs {
+    .card {
+      width: 350px;
+      border-radius: 20px;
+      .date {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        z-index: 999;
+        .icon {
+          color: $mainGreen;
+        }
+      }
+    }
+  }
+}
+
+// End Articles
