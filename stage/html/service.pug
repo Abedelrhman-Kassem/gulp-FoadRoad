@@ -1,0 +1,61 @@
+doctype html
+include pug/components/mixins
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+    body 
+        include pug/layout/header
+        section(class='about-landing')
+            div(class='container')
+                img(src="images/green-thing.png",class='d-none green-thing d-lg-block' alt="")
+                div(class='row align-items-center justify-content-between')
+                    div(class='info text-center text-lg-start col-lg-6')
+                        h1(class='heading sen display-1') Services
+                        p(class='text-dark lh-lg' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                    div(class='image-holder relative d-none d-lg-block col-6 p-0')
+                        img(src="pictures/landing-service.png",class='h-100', alt="")
+
+        section(class='service-service')
+            div(class='container')
+                h1(class='display-3 sen text-center mb-5') Our Service
+                div(class='boxs d-flex align-items-center justify-content-center justify-content-xl-between flex-wrap gap-5')
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-solid fa-person-biking text-white')
+                        h2(class='sen fw-bold my-4') Food Delivery
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-solid fa-bottle-droplet text-white')
+                        h2(class='sen fw-bold my-4') Grocery Delivery
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-regular fa-compass text-white')
+                        h2(class='sen fw-bold my-4') Drive In Restaurant
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-solid fa-bag-shopping text-white')
+                        h2(class='sen fw-bold my-4') Grocery Shopping
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-solid fa-utensils text-white')
+                        h2(class='sen fw-bold my-4') Join Merchant
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    
+                    div(class='box text-center')
+                        div(class='icon-holder d-flex align-items-center justify-content-center mx-auto rounded-4')
+                            i(class='icon fa-regular fa-circle-user text-white')
+                        h2(class='sen fw-bold my-4') Join Courier
+                        p(class='opensans fw-regular text-black lh-lg',style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+
+        include pug/layout/footer
+        include pug/links/scripts

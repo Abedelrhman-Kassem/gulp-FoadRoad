@@ -1,0 +1,17 @@
+@use "../variable/variables.scss" as *;
+
+section.service-service {
+  .boxs {
+    .box {
+      max-width: 320px;
+      .icon-holder {
+        width: 120px;
+        height: 120px;
+        background-image: $altLinear;
+        .icon {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
