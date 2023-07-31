@@ -1,9 +1,1 @@
 @use "../variable/variables.scss" as *;
-
-@media (max-width: 991px) {
-  .container-fluid {
-    background-color: $white;
-    border-radius: 5px;
-    padding-bottom: 10px;
-  }
-}

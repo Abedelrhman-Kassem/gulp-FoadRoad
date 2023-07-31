@@ -8,4 +8,3 @@ links.forEach((a) => {
     a.classList.add("active");
   });
 });
-

@@ -1,12 +1,7 @@
 @use "../variable/variables.scss" as *;
 
 // Start Landing
-.landing {
-  .info {
-    .play-icon {
-      color: $mainGreen;
-    }
-  }
+section.home-landing {
   .image-holder {
     .order {
       left: 0px;
@@ -19,17 +14,13 @@
       bottom: 0;
       transform: translate(-50%, 50%);
       width: 350px;
-      .price {
-        color: $mainGreen;
-        font-size: 20px;
-      }
     }
   }
 }
 // End Landing
 
 // Start Simple
-section.simple {
+section.home-simple {
   .container {
     .heading-p {
       max-width: 200px;
@@ -64,7 +55,7 @@ section.simple {
 // End Simple
 // Start Features
 
-section.feature {
+section.home-feature {
   .container {
     .heading-p {
       max-width: 500px;
@@ -74,7 +65,7 @@ section.feature {
 
 // End Features
 // Start Works
-section.works {
+section.home-works {
   .container {
     position: relative;
     &::before {
@@ -96,20 +87,12 @@ section.works {
     }
     .info {
       .box {
-        h3 {
-          span {
-            color: $mainGreen;
-          }
-        }
         p {
           max-width: 300px;
         }
       }
     }
     .image {
-      .overlay {
-        border-radius: 30px;
-      }
       .order {
         right: 30px;
         top: 30px;
@@ -121,23 +104,17 @@ section.works {
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 50%);
-        h3 {
-          span {
-            color: $mainYellow;
-          }
-        }
       }
     }
   }
 }
 // End Works
 // Start Menu
-section.menu {
+section.home-menu {
   .boxs {
     .box {
       height: 270px;
       background-color: $blurWhite;
-      border-radius: 20px;
       width: 170px;
       transition: 0.3s;
       &:hover {
@@ -158,7 +135,7 @@ section.menu {
 // End Menu
 // Start Delicious
 
-section.delicious {
+section.home-delicious {
   .heading {
     .slider-arrow {
       background-color: $blurWhite;
@@ -180,21 +157,9 @@ section.delicious {
 }
 
 // End Delicious
-// Start Customers
-
-section.customers {
-  .mint {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translateY(-50%);
-  }
-}
-
-// End Customers
 // Start Express
 
-section.express {
+section.home-express {
   form {
     .form-control:focus {
       border-color: $mainGreen;
@@ -217,7 +182,7 @@ section.express {
 // End Express
 // Start Partner
 
-section.partner {
+section.home-partner {
   .mint {
     position: absolute;
     left: 0;
@@ -245,7 +210,7 @@ section.partner {
 // End Partner
 // Start Articles
 
-section.articles {
+section.home-articles {
   .boxs {
     .card {
       width: 350px;
@@ -255,9 +220,6 @@ section.articles {
         left: 20px;
         top: 20px;
         z-index: 999;
-        .icon {
-          color: $mainGreen;
-        }
       }
     }
   }

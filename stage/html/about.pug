@@ -1,0 +1,123 @@
+include pug/components/mixins
+doctype html
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+    body 
+        include pug/layout/header
+                
+        section(class='about-landing')
+            div(class='container')
+                img(src="images/green-thing.png",class='d-none green-thing d-lg-block' alt="")
+                div(class='row align-items-center justify-content-between')
+                    div(class='info text-center text-lg-start col-lg-6')
+                        h1(class='heading sen display-1') About Us
+                        p(class='text-dark lh-lg' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                    div(class='image-holder relative d-none d-lg-block col-6 p-0')
+                        img(src="images/about-landing.png",class='h-100', alt="")
+
+        section(class='about-serve')
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='image-holder d-flex d-none d-lg-block mx-lg-0 m-auto relative col-12 col-lg-5 p-0')
+                        img(src="images/about-serve.png", alt="")
+                        +overlay('border-radius: 20px;')
+                        div(class='box-1 rounded-4 p-3 shadow-lg d-flex align-items-center gap-3 bg-white')
+                            img(src="images/badge-serve.png", alt="")  
+                            h5(class='sen m-0 fw-bold') We Are Number 1
+                        div(class='box-2 rounded-4 shadow p-3 d-flex align-items-center flex-wrap bg-white')
+                            div(class='d-flex align-items-center gap-3')
+                                img(src="images/angel-serve.png", alt="")
+                                div(class='title')
+                                    h6(class='sen fw-bold') Angel Jessica
+                                    div(class='stars my-2')
+                                        i(class="star me-1 fa-solid fa-star yellow")
+                                        i(class="star me-1 fa-solid fa-star yellow")
+                                        i(class="star me-1 fa-solid fa-star yellow")
+                                        i(class="star me-1 fa-solid fa-star yellow")
+                                        i(class="star me-1 fa-solid fa-star yellow")
+                            p(class='opensans text-black lh-lg fw-regular', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                    div(class='info col-12 col-lg-5')
+                        h1(class='display-3 sen') We Serve Door to Door Dood Delivery
+                        p(class='opensans text-black lh-lg fw-regular my-4', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        p(class='opensans text-black lh-lg fw-regular', style='--bs-text-opacity: .6;') Etiam massa magna, varius tincidunt semper vitae, luctus iaculis libero. Duis at maximus purus. In ullamcorper nisi eu iaculis venenatis. Aenean malesuada imperdiet pharetra.
+                        div(class='watch opensans fw-semibold d-flex align-items-center mt-4') #[i(class='play-icon green fa-solid fa-play mx-3')] watch Video
+
+        section(class='about-mission')
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='col-12 col-lg-6')
+                        h1(class='sen display-5') Our Mission is to Evolve Local Businesses
+                        p(class='opensans text-black fw-regular lh-lg mt-4 mb-5', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra metus metus, vitae consequat justo facilisis at. Nunc vestibulum augue iaculis augue bibendum iaculis.
+                        +buttonLink('#','Register Now','')
+                    div(class='info mt-5 m-lg-0 col-12 col-lg-5 p-3 p-sm-5  rounded')
+                        div(class='mb-5')
+                            h2(class='sen fw-bold mb-3') #[span(class='green') 01] Increase Customers
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        div(class='mb-5')
+                            h2(class='sen fw-bold mb-3') #[span(class='green') 02] Sell More Food
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        div
+                            h2(class='sen fw-bold mb-3') #[span(class='green') 03] Income Increases
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        
+        section(class='about-service')
+            div(class='container')
+                div(class='row justify-content-between')
+                    div(class='image-holder col-12 col-md-8')
+                        h1(class='display-4 sen mb-5') Best Service to Fulfill Your Expectations.
+                        img(src="images/about-service.png", alt="")
+                    div(class='info mt-5 mt-md-0 text-center text-md-start col-12 col-md-3')
+                        div(class='border-bottom mb-5')
+                            h2(class='display-5 green sen fw-bold') 800K+
+                            h3(class='sen mb-5 mt-4 fw-bold') Users Download
+                        div(class='border-bottom mb-5')
+                            h2(class='display-5 green sen fw-bold') 650K+
+                            h3(class='sen mb-5 mt-4 fw-bold') Users Order
+                        div(class='border-bottom mb-5')
+                            h2(class='display-5 green sen fw-bold') 1200K+
+                            h3(class='sen mb-5 mt-4 fw-bold') Merchant
+                        div(class='mb-5')
+                            h2(class='display-5 green sen fw-bold') 100K+
+                            h3(class='sen mb-5 mt-4 fw-bold') Cities
+
+        section(class='about-customers')
+            div(class='container')
+                img(src="images/Mint.png",class='mint d-none d-sm-block' alt="")
+                div(class='content row align-items-center justify-content-between')
+                    div(class='image-holder col-12 col-lg-5')
+                        img(src="images/customers-1.png", alt="")
+                    div(class='info col-12 col-lg-6')
+                        h1(class='heading mt-5 display-4 sen') What Customers Say About us
+                        p(class='opensans text-dark lh-lg fw-regular my-5', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='card border-0 relative m-auto m-md-0 text-center text-md-start' style='max-width: 400px;')
+                            div(class='row g-0')
+                                div(class='col-md-4 d-flex align-items-center justify-content-center')
+                                    img(src="images/customers-2.png", alt="")
+                                div(class='col-md-8')
+                                    div(class='card-body')
+                                        h5(class='card-title') Mohamed Mostafa 
+                                        p(class='card-text') #[small(class='text-body-secondry')] Food Lovers
+                                        div(class='stars')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            i(class='star fa-solid fa-star yellow')
+                                            span(class='rate ms-3') (5.0)
+
+        section(class='about-delivery')
+            div(class='container')
+                div(class='row justify-content-between align-items-center')
+                    div(class='info col-12 col-lg-6')
+                        h1(class='display-5 sen mb-4') The Best Food Delivery App. Download Now!
+                        p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='apps')
+                            h3(class='heading mt-5 my-4 sen fw-bold') Download Available
+                            img(src="images/google-play-badge.png", alt="", class='pointer')
+                            img(src="images/app-store-badge.png", alt="", class='pointer')
+                    div(class='image-holder mt-5 mt-lg-0 col-12 col-lg-6 relative text-center')
+                        img(src="images/about-delivery.png", alt="")
+        include pug/layout/footer
+        include pug/links/scripts

@@ -1,0 +1,41 @@
+@use "../variable/variables.scss" as *;
+
+// Start Serve
+section.about-serve {
+  .image-holder {
+    width: fit-content;
+    .box-1 {
+      width: 200px;
+      z-index: 9;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: translate(50%, 100%);
+    }
+    .box-2 {
+      width: 300px;
+      z-index: 9;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
+// End Serve
+// Start Delivery
+section.about-delivery {
+  .image-holder::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    background-color: $blurWhite;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+// End Delivery

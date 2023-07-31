@@ -14,9 +14,6 @@ img {
 
 .navbar-brand {
   width: fit-content;
-  .h1-logo {
-    color: $mainGreen;
-  }
 }
 
 .common-a {
@@ -53,9 +50,6 @@ section {
 .order {
   position: absolute;
   background-color: $white;
-  .order-icon {
-    color: $mainGreen;
-  }
 }
 
 .pointer {
@@ -63,7 +57,25 @@ section {
 }
 
 .yellow {
-  color: $mainYellow;
+  color: $mainYellow !important;
+}
+
+.green {
+  color: $mainGreen !important;
+}
+
+.green-thing {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-100%);
+}
+
+.mint {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
 }
 
 // Fonts
