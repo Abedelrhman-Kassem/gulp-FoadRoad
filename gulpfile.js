@@ -61,9 +61,9 @@ function watching(cb) {
 function minifyImages(cb) {
   cb();
   return gulp
-    .src("dist/images/*")
+    .src("dist/pictures/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("dist/pictures/"));
+    .pipe(gulp.dest("dist/images/"));
 }
 exports.images = minifyImages;
 exports.default = gulp.parallel(connectServer, watching);
