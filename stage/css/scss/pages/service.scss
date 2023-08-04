@@ -1,5 +1,6 @@
 @use "../variable/variables.scss" as *;
 
+// Start Service
 section.service-service {
   .boxs {
     .box {
@@ -15,3 +16,53 @@ section.service-service {
     }
   }
 }
+// End Service
+// Start Discount
+
+section.service-discount {
+  .discount {
+    background-color: $blurWhite;
+    width: fit-content;
+  }
+  .header {
+    h2 {
+      max-width: 500px;
+    }
+    p {
+      max-width: 400px;
+    }
+  }
+}
+
+// End Discount
+
+// Start Delicious
+
+section.service-delicious {
+  .info {
+    .box {
+      img {
+        position: absolute;
+        transform: translateY(-125%);
+      }
+    }
+  }
+}
+
+// End Delicious
+// Start Frequently
+
+section.service-frequently {
+  .accordion {
+    .accordion-item {
+      .accordion-button::after {
+        display: none;
+      }
+      .accordion-button:not(.collapsed) {
+        background-color: white !important;
+      }
+    }
+  }
+}
+
+// End Frequently

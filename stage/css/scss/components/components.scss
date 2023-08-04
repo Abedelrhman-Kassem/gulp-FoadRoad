@@ -22,6 +22,7 @@ img {
   box-shadow: 15px 12px 50px 0px $mainGreen;
   height: 51px;
   width: fit-content;
+  z-index: 1;
 }
 
 @media (min-width: 992px) {
@@ -36,6 +37,30 @@ section {
   padding-top: $section-top;
   padding-bottom: $section-bottom;
   position: relative;
+}
+
+header,
+#landing {
+  background-color: $blurWhite;
+}
+
+form {
+  .form-control:focus {
+    border-color: $mainGreen;
+  }
+  .form-control:focus ~ label {
+    transform: translate(2rem, -2rem) !important;
+    color: $mainGreen !important;
+  }
+  label {
+    transform: translate(2rem, 0rem);
+  }
+  .icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .overlay {

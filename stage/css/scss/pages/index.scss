@@ -157,29 +157,7 @@ section.home-delicious {
 }
 
 // End Delicious
-// Start Express
 
-section.home-express {
-  form {
-    .form-control:focus {
-      border-color: $mainGreen;
-    }
-    .form-control:focus ~ label {
-      transform: translate(2rem, -2rem);
-    }
-    label {
-      transform: translate(2rem, 0rem);
-    }
-    .icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-// End Express
 // Start Partner
 
 section.home-partner {

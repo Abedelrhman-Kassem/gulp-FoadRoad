@@ -1,11 +1,22 @@
-let links = document.querySelectorAll(".nav-link");
+// Start Service Page
+if (document.title == "FoadRoad/Service") {
+  // Accordions Service Page
+  // Change Minus, Plus
 
-links.forEach((a) => {
-  a.addEventListener("click", () => {
-    links.forEach((ele) => {
-      ele.classList.remove("active");
+  let buttons = document.querySelectorAll(
+    ".service-frequently .accordion-item button"
+  );
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      if (button.classList.contains("collapsed")) {
+        button.firstElementChild.classList.remove("fa-minus");
+        button.firstElementChild.classList.add("fa-plus");
+      } else {
+        button.firstElementChild.classList.add("fa-minus");
+        button.firstElementChild.classList.remove("fa-plus");
+      }
     });
-    a.classList.add("active");
   });
-});
-
+}
+// End Service Page

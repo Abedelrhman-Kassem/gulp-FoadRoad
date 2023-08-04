@@ -1,0 +1,11 @@
+@use "../variable/variables.scss" as *;
+
+section.merchant-simple {
+  .increase {
+    height: 200px;
+    background-color: $blurWhite;
+  }
+  .box {
+    max-width: 360px;
+  }
+}

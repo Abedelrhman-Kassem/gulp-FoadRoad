@@ -1,0 +1,41 @@
+@use "../variable/variables.scss" as *;
+
+.contact-message {
+  .container {
+    background-color: $blurWhite;
+    .form-floating {
+      width: 46%;
+      textarea {
+        resize: none;
+        height: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .form-floating {
+    width: 100% !important;
+  }
+}
+
+.contact-office {
+  .box {
+    .icon-holder {
+      background-color: $mainGreen;
+      width: 100px;
+      height: 100px;
+      .icon {
+        font-size: 40px;
+      }
+    }
+    h3 {
+      max-width: 300px;
+    }
+  }
+}
+
+.contact-map {
+  iframe {
+    height: 600px;
+  }
+}

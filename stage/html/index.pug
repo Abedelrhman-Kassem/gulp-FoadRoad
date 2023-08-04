@@ -4,9 +4,10 @@ html(lang="en")
     head
         include pug/links/styles
         include pug/links/fonts
+        title FoadRoad/Home
     body 
         include pug/layout/header
-        section(class='home-landing')
+        section(class='home-landing', id='landing')
             div(class='container')
                 div(class='row align-items-center justify-content-between')
                     div(class='info col-lg-6')
@@ -120,9 +121,9 @@ html(lang="en")
                     h1(class='sen display-3') Delicious Food For You
                     div(class='arrows display-5 d-flex gap-3')
                         i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-left')
-                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-right')
+                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-right')  
                 div(class='cards d-flex justify-content-center flex-wrap gap-5')
-                
+
                     div(class='card overflow-hidden shadow border-0', style='width: 18rem;')
                         div(class='image-holder relative')
                             img(src="images/delicious-1.png", alt="")
@@ -263,26 +264,26 @@ html(lang="en")
                         h1(class='heading display-4 mb-5 sen') Express food oredering with delivery
                         form
                             div(class='form-floating mb-3 opensans')
-                                i(class='icon fa-solid fa-user fa-lg')
+                                i(class='icon fa-solid fa-user fa-lg green')
                                 input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingName', placeholder='Name')
-                                label(for="floatingName") Name
+                                label(for="floatingName",) Name
 
                             div(class='form-floating mb-3 opensans')
-                                i(class='icon fa-solid fa-location-dot fa-lg')
+                                i(class='icon fa-solid fa-location-dot fa-lg green')
                                 input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingAddress', placeholder='Address')
-                                label(for="floatingAddress") Address
+                                label(for="floatingAddress",) Address
 
                             div(class='form-floating mb-3 opensans')
-                                i(class='icon fa-regular fa-envelope fa-lg')
+                                i(class='icon fa-regular fa-envelope fa-lg green')
                                 input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='email', id='floatingEmail', placeholder='Email')
-                                label(for="floatingName") Email
+                                label(for="floatingName",) Email
 
                             div(class='form-floating mb-3 opensans')
-                                i(class='icon fa-solid fa-phone-flip fa-lg')
+                                i(class='icon fa-solid fa-phone-flip fa-lg green')
                                 input(class='form-control  p-0 ps-5 rounded-pill shadow-none', type='text', id='floatingPhone', placeholder='Phone')
-                                label(for="floatingPhone") Phone
+                                label(for="floatingPhone",) Phone
                             
-                            +buttonLink('#','Register Now', 'd-inline')
+                            +buttonLink('#','Register Now', 'mt-5')
 
                     div(class='image-holder d-none d-lg-flex col-lg-6')
                         img(src="images/express-home.png", alt="")

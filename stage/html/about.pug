@@ -1,13 +1,14 @@
-include pug/components/mixins
 doctype html
+include pug/components/mixins
 html(lang="en")
     head
         include pug/links/styles
         include pug/links/fonts
+        title FoadRoad/About
     body 
         include pug/layout/header
                 
-        section(class='about-landing')
+        section(class='about-landing', id='landing')
             div(class='container')
                 img(src="images/green-thing.png",class='d-none green-thing d-lg-block' alt="")
                 div(class='row align-items-center justify-content-between')

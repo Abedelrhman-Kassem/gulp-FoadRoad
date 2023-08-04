@@ -1,1 +1,1 @@
-let links=document.querySelectorAll(".nav-link");links.forEach(e=>{e.addEventListener("click",()=>{links.forEach(e=>{e.classList.remove("active")}),e.classList.add("active")})});
+if("FoadRoad/Service"==document.title){document.querySelectorAll(".service-frequently .accordion-item button").forEach(e=>{e.addEventListener("click",()=>{e.classList.contains("collapsed")?(e.firstElementChild.classList.remove("fa-minus"),e.firstElementChild.classList.add("fa-plus")):(e.firstElementChild.classList.add("fa-minus"),e.firstElementChild.classList.remove("fa-plus"))})})}

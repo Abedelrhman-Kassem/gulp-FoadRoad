@@ -6,45 +6,47 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>FoadRoad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&amp;family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;family=Roboto:wght@400;500;700&amp;family=Sen:wght@400;700;800&amp;family=Work+Sans&amp;display=swap" rel="stylesheet">
+    <title>FoadRoad/Service</title>
   </head>
   <body> 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"><img class="img-logo" src="images/logo.png">
-                <h1 class="h1-logo green sen fw-bold m-0">Foad<span class="logo-span yellow">Road</span></h1></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="about.html">About</a></li>
-              <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="resturant.html">Resturant</a></li>
-              <li class="nav-item dropdown"><a class="nav-link opensans dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu">
-                  <li> <a class="dropdown-item opensans" href="merchant.html">Become Merchant</a> </li>
-                  <li> <a class="dropdown-item opensans" href="team.html">Our Team</a> </li>
-                  <li> <a class="dropdown-item opensans" href="faq.html">FAQ</a> </li>
-                  <li> <a class="dropdown-item opensans" href="single.html">Single Resturant</a> </li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="service.html">Service</a></li>
-              <li class="nav-item"><a class="nav-link opensans mb-4 mb-lg-0" aria-current="page" href="contact.html">Contact</a></li>
-            </ul><a class="common-a opensans px-5 text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="login.html">Login</a>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-logo d-none d-sm-block" src="images/logo.png">
+                  <h1 class="h1-logo green sen fw-bold m-0">Food<span class="logo-span yellow">Road</span></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="resturant.html">Resturant</a></li>
+                <li class="nav-item dropdown"><a class="nav-link opensans dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item opensans" href="merchant.html">Become Merchant</a> </li>
+                    <li> <a class="dropdown-item opensans" href="team.html">Our Team</a> </li>
+                    <li> <a class="dropdown-item opensans" href="faq.html">FAQ</a> </li>
+                    <li> <a class="dropdown-item opensans" href="single.html">Single Resturant</a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="service.html">Service</a></li>
+                <li class="nav-item"><a class="nav-link opensans mb-4 mb-lg-0" aria-current="page" href="contact.html">Contact</a></li>
+              </ul><a class="common-a opensans px-5 text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="login.html">Login</a>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-    <section class="about-landing">
+        </nav>
+      </div>
+    </header>
+    <section class="about-landing" id="landing">
       <div class="container"><img class="d-none green-thing d-lg-block" src="images/green-thing.png" alt="">
         <div class="row align-items-center justify-content-between">
           <div class="info text-center text-lg-start col-lg-6">
             <h1 class="heading sen display-1">Services</h1>
             <p class="text-dark lh-lg" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
           </div>
-          <div class="image-holder relative d-none d-lg-block col-6 p-0"><img class="h-100" src="pictures/landing-service.png" alt=""></div>
+          <div class="image-holder relative d-none d-lg-block col-6 p-0"><img class="h-100" src="images/landing-service.png" alt=""></div>
         </div>
       </div>
     </section>
@@ -85,9 +87,86 @@
         </div>
       </div>
     </section>
+    <section class="service-discount">
+      <div class="container">
+        <div class="discount rounded-3 green px-3 py-2 sen fw-bold"><i class="icon fa-solid fa-hand-holding-dollar mx-2"></i> Download App And Get Your Discount</div>
+        <div class="header my-5 d-flex align-items-center justify-content-between flex-wrap gap-4">
+          <h2 class="sen display-3">Make You Easier And Happeir</h2>
+          <p class="opensans lh-lg text-black" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        </div>
+        <div class="row align-items-center text-center">
+          <div class="box col-12 col-sm-6 col-lg-4 "><img class="mw-100" src="images/feature1-home.png" alt="" srcset="">
+            <h3 class="sen fw-bold my-3">The Best Courier</h3>
+            <p class="text-dark lh-lg opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+          </div>
+          <div class="box col-12 col-sm-6 col-lg-4 "><img class="mw-100" src="images/feature2-home.png" alt="" srcset="">
+            <h3 class="sen fw-bold my-3">Easy To Use</h3>
+            <p class="text-dark lh-lg opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+          </div>
+          <div class="box col-12 col-sm-6 col-lg-4"><img class="mw-100" src="images/feature3-home.png" alt="" srcset="">
+            <h3 class="sen fw-bold my-3">24/7 Support</h3>
+            <p class="text-dark lh-lg opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-delicious">
+      <div class="container">
+        <div class="content row align-items-center justify-content-between">
+          <div class="image-holder text-center text-lg-start col-12 col-lg-5"><img src="images/service-delicious.png" alt=""></div>
+          <div class="info col-12 col-lg-6">
+            <h1 class="heading mt-5 display-4 sen">Wait a Minute For Delicious</h1>
+            <p class="opensans text-dark lh-lg fw-regular my-5" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <div class="box p-4 pt-5 rounded-4 shadow-lg relative m-auto m-md-0 text-center text-md-start"><img src="images/service-delicious-card.png" alt="">
+              <p class="opensans lh-lg text-black" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+              <div class="card-body p-0">
+                <h5 class="d-inline">Mohamed Mostafa </h5>
+                <div class="stars d-inline ms-2"><i class="star fa-solid fa-star yellow me-1"></i><i class="star fa-solid fa-star yellow me-1"></i><i class="star fa-solid fa-star yellow me-1"></i><i class="star fa-solid fa-star yellow me-1"></i><i class="star fa-solid fa-star yellow"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="service-frequently">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="info col-12 col-lg-6">
+            <h1 class="display-3 sen mb-5">frequently Asked Questions</h1>
+            <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed justify-content-between green fw-bold fs-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">How Long My Order Delivery <i class="icon fa-solid fa-minus"></i></button>
+                </h2>
+                <div class="accordion-collapse collapse show" id="panelsStayOpen-collapseOne">
+                  <div class="accordion-body lh-lg text-black opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed justify-content-between green fw-bold fs-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">How Long My Order Delivery <i class="icon fa-solid fa-plus"></i></button>
+                </h2>
+                <div class="accordion-collapse collapse" id="panelsStayOpen-collapseTwo">
+                  <div class="accordion-body lh-lg text-black opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed dia</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed justify-content-between green fw-bold fs-3 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">How Long My Order Delivery <i class="icon fa-solid fa-plus"></i></button>
+                </h2>
+                <div class="accordion-collapse collapse" id="panelsStayOpen-collapseThree">
+                  <div class="accordion-body lh-lg text-black opensans" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="image-holder text-center col-5 d-none d-lg-block"><img src="images/service-frequently.png" alt=""></div>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
-      <div class="container"><img class="mint d-none d-sm-block" src="images/footer-mint.png" alt=""><a class="navbar-brand d-flex align-items-center" href="#"><img class="img-logo" src="images/logo.png">
-              <h1 class="h1-logo green sen fw-bold m-0">Foad<span class="logo-span yellow">Road</span></h1></a>
+      <div class="container"><img class="mint d-none d-sm-block" src="images/footer-mint.png" alt=""><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-logo d-none d-sm-block" src="images/logo.png">
+              <h1 class="h1-logo green sen fw-bold m-0">Food<span class="logo-span yellow">Road</span></h1></a>
         <div class="info mb-5 row justify-content-center justify-content-sm-between">
           <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <h3 class="heading my-5 sen fw-bold">Why Us?</h3>
