@@ -157,7 +157,20 @@ section.home-delicious {
 }
 
 // End Delicious
+// Start Express
 
+section.home-express {
+  form {
+    .icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// End Express
 // Start Partner
 
 section.home-partner {

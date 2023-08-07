@@ -1,0 +1,47 @@
+@use "../variable/variables.scss" as *;
+
+section.single-landing {
+  background-image: url("../pictures/single-landing.png");
+  min-height: 100vh;
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    min-height: inherit;
+    background-color: #222b21;
+    opacity: 48%;
+    top: 0;
+  }
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 650px;
+    .icon-holder {
+      width: 100px;
+      height: 100px;
+      background-color: $mainGreen;
+      .icon {
+        font-size: 40px;
+      }
+    }
+  }
+  .box {
+    position: absolute;
+    max-width: 1100px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    @media (max-width: 575px) {
+      > div {
+        border-right: none !important;
+        border-left: none !important;
+        border-bottom: 2px solid #ddd;
+        width: 100%;
+      }
+    }
+  }
+}

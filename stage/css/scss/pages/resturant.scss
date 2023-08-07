@@ -1,0 +1,47 @@
+@use "../variable/variables.scss" as *;
+
+section.resturant-find {
+  .heading {
+    max-width: 680px;
+  }
+  form {
+    .icon-holder {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-10%, -50%);
+      width: 50px;
+      height: 50px;
+      background-color: $mainGreen;
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+section.resturant-resturants {
+  .heading {
+    .dropdown {
+      .btn {
+        background-color: #e6ffe9;
+      }
+      .filter-result {
+        text-transform: capitalize;
+      }
+    }
+  }
+  .cards {
+    .card {
+      width: 30%;
+      min-width: 280px;
+      transition: 0.3s;
+      .place {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        background-color: #f9faf9;
+      }
+    }
+  }
+}

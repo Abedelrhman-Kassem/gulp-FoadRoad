@@ -1,5 +1,5 @@
 mixin buttonLink(href, content, classes)
-    a(class='common-a opensans px-5 text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center' class=classes, href=href) #{content}
+    a(class=classes, class='common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center', href=href) #{content}
 
 mixin overlay(radius,radiusClass)
     div(class='overlay',class=radiusClass, style=radius)

@@ -1,0 +1,38 @@
+doctype html
+include pug/components/mixins
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+        title FoadRoad/Single-Resturant
+    body 
+        include pug/layout/header
+                            
+        section(class='single-landing', id='landing')
+            div(class='content w-100 text-center')
+                div(class='icon-holder d-flex align-items-center justify-content-center m-auto rounded-circle')
+                    i(class='icon fa-solid fa-utensils text-white')
+                h1(class='sen display-4 my-4 text-white') The Mama Restaurants
+                p(class='opensans lh-lg m-auto text-white', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+            
+            div(class='box text-center text-sm-start d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 bg-white rounded-3 mx-auto shadow px-2 py-3 p-md-4 p-lg-5')
+                
+                div(class='location border-end border-2 opensans px-2 px-md-4 px-xl-5')
+                    h6 Location
+                    p(class='m-0 lh-lg text-black', style='--bs-text-opacity: .6;') 2500 Mo Tower, El Nozha St ,El Harm
+                div(class='reviews opensans px-2 px-md-4 px-xl-5')
+                    h6 Reviews
+                    div(class='stars d-flex justify-content-center align-items-center')
+                        i(class='icon fa-solid fa-star yellow me-1')
+                        i(class='icon fa-solid fa-star yellow me-1')
+                        i(class='icon fa-solid fa-star yellow me-1')
+                        i(class='icon fa-solid fa-star yellow me-1')
+                        i(class='icon fa-solid fa-star yellow me-1')
+                        div(class='rate') (5.0)
+                div(class='hours border-start border-2 opensans px-2 px-md-4 px-xl-5')
+                    h6 open hours
+                    p(class='m-0 lh-lg text-black', style='--bs-text-opacity: .6;') 11am – 12pm (Mon-Fri)
+
+
+        include pug/layout/footer
+        include pug/links/scripts

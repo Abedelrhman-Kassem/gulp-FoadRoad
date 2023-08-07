@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&amp;family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;family=Roboto:wght@400;500;700&amp;family=Sen:wght@400;700;800&amp;family=Work+Sans&amp;display=swap" rel="stylesheet">
+    <title>FoadRoad/Resturant</title>
+  </head>
+  <body> 
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-logo d-none d-sm-block" src="images/logo.png">
+                  <h1 class="h1-logo green sen fw-bold m-0">Food<span class="logo-span yellow">Road</span></h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse ps-lg-5" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="resturant.html">Resturant</a></li>
+                <li class="nav-item dropdown"><a class="nav-link opensans dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li> <a class="dropdown-item opensans" href="merchant.html">Become Merchant</a> </li>
+                    <li> <a class="dropdown-item opensans" href="team.html">Our Team</a> </li>
+                    <li> <a class="dropdown-item opensans" href="faq.html">FAQ</a> </li>
+                    <li> <a class="dropdown-item opensans" href="single.html">Single Resturant</a> </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link opensans" aria-current="page" href="service.html">Service</a></li>
+                <li class="nav-item"><a class="nav-link opensans mb-4 mb-lg-0" aria-current="page" href="contact.html">Contact</a></li>
+              </ul><a class="common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="login.html">Login</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="resturant-landing" id="landing">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="info text-center text-lg-start col-lg-7">
+            <h1 class="heading sen display-3">Discover Resturant</h1>
+            <p class="text-black lh-lg" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+          </div>
+          <div class="image-holder align-self-end relative col-12 col-lg-5 p-0 text-center"><img src="images/resturant-landing.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <section class="resturant-find pb-2">
+      <div class="container">
+        <div class="heading m-auto text-center">
+          <h2 class="sen display-4">Let's Find Something Delicious For You</h2>
+          <p class="text-black lh-lg mt-4 mb-5" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.</p>
+          <form>
+            <div class="form-floating relative">
+              <input class="form-control shadow-none p-0 ps-5 rounded-pill" type="text" id="searchResturant" placeholder="Search Resturant . . .">
+              <label for="searchResturant">Search Resturant . . .</label>
+              <button class="icon-holder border-0 d-none d-sm-flex relative rounded-circle d-flex align-items-center justify-content-center"><i class="icon text-white fa-solid fa-search "></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="resturant-resturants pt-0">
+      <div class="container">
+        <div class="heading mb-5 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+          <h2 class="sen display-4 text-center text-sm-start">Recommended Resturant</h2>
+          <div class="filter">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle green fw-bold h3 fs-4 rounded-pill py-2 px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">Filter</button>
+              <ul class="dropdown-menu">
+                <li> <a class="filter-result dropdown-item pointer">giza</a></li>
+                <li> <a class="filter-result dropdown-item pointer">new york</a></li>
+                <li> <a class="filter-result dropdown-item pointer">alexandriea</a></li>
+                <li> <a class="filter-result dropdown-item pointer">cairo</a></li>
+                <li> <a class="filter-result dropdown-item pointer">sharkia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="cards d-flex justify-content-center flex-wrap gap-5">
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-1.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">El Haram, Giza</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Golden Line Restaurants</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-2.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">New York City</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">The Mama Restaurants</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-3.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">New York City</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Empire And Food Cafe</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-4.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">El Sharkia</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">The Brimstone Restaurant</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-5.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">Alexandriea</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Stranger Food Restaurant</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-6.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">Cairo</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Osteria Francescana Caffe</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-7.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">Cairo</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Italian Restaurant</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-8.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">Alexandriea</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Vegan Only Restaurant</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-0 shadow rounded-4">
+            <div class="image-holder relative"><img class="card-img-top" src="images/resturant-card-9.png" alt="...">
+              <div class="place rounded-pill py-2 px-4">Giza</div>
+            </div>
+            <div class="card-body px-3 py-4">
+              <h5 class="card-title sen fw-bold">Osteria Forest Restaurant</h5>
+              <p class="card-text text-black lh-lg my-4" style="--bs-text-opacity: .6;">2500 Mo Tower, El Nozha St ,El Harm St , El Giza</p>
+              <div class="card-bottom d-flex align-items-center justify-content-between gap-3"><a class="px-4 common-a opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center" href="#">View</a>
+                <div class="stars d-flex align-items-center"><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i><i class="icon fa-solid fa-star yellow me-1"></i>
+                  <div class="rate">(5.0)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="resturant-delivery">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="info col-12 col-lg-6">
+            <h1 class="display-5 sen mb-4">The Best Food Delivery App. Download Now!</h1>
+            <p class="opensans text-black lh-lg" style="--bs-text-opacity: .6;">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <div class="apps">
+              <h3 class="heading mt-5 my-4 sen fw-bold">Download Available</h3><img class="pointer" src="images/google-play-badge.png" alt=""><img class="pointer" src="images/app-store-badge.png" alt="">
+            </div>
+          </div>
+          <div class="image-holder mt-5 mt-lg-0 col-12 col-lg-6 relative text-center"><img src="images/about-delivery.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"><img class="mint d-none d-sm-block" src="images/footer-mint.png" alt=""><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-logo d-none d-sm-block" src="images/logo.png">
+              <h1 class="h1-logo green sen fw-bold m-0">Food<span class="logo-span yellow">Road</span></h1></a>
+        <div class="info mb-5 row justify-content-center justify-content-sm-between">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <h3 class="heading my-5 sen fw-bold">Why Us?</h3>
+            <nav class="nav flex-column"><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Responsive</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Engagememnt</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Scale</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Watch The Demo</a></nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <h3 class="heading my-5 sen fw-bold">Resources</h3>
+            <nav class="nav flex-column"><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Developers</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Apps</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Blog</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Help Center</a></nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <h3 class="heading my-5 sen fw-bold">Company</h3>
+            <nav class="nav flex-column"><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">About</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Merchant</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Career</a><a class="text-decoration-none text-black opensans fw-regular my-2" href="#" style="--bs-text-opacity: .6;">Contact</a></nav>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <h3 class="heading my-5 sen fw-bold">Our Social Media</h3>
+            <div class="socials"><a class="social-links d-inline-flex align-items-center justify-content-center rounded me-4" href="#"><i class="icon fa-brands fa-facebook-f fa-lg"></i></a><a class="social-links d-inline-flex align-items-center justify-content-center rounded me-4" href="#"><i class="icon fa-brands fa-twitter fa-lg"></i></a><a class="social-links d-inline-flex align-items-center justify-content-center rounded me-4" href="#"><i class="icon fa-brands fa-instagram fa-lg"></i></a></div>
+            <div class="apps">
+              <h3 class="heading mt-5 my-4 sen fw-bold">Download App</h3><img class="pointer" src="images/google-play-badge.png" alt=""><img class="pointer" src="images/app-store-badge.png" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="finals my-5 d-flex flex-wrap align-items-center justify-content-center gap-3 justify-content-lg-between">
+          <div class="copyright text-black opensans fw-regular" style="--bs-text-opacity: .6;"> </div>
+          <div class="links"><a class="text-decoration-none pointer mx-2 text-black opensans fw-regular" href="#" style="--bs-text-opacity: .6;">Privacy Policy </a><a class="text-decoration-none pointer mx-2 text-black opensans fw-regular" href="#" style="--bs-text-opacity: .6;">Cookie Policy </a><a class="text-decoration-none pointer mx-2 text-black opensans fw-regular" href="#" style="--bs-text-opacity: .6;">Terms & Services </a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main-min.js"> </script>
+    <script src="js/all.min.js"> </script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+  </body>
+</html>

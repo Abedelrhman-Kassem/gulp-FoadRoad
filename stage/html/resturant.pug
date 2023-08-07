@@ -1,0 +1,80 @@
+doctype html
+include pug/components/mixins
+include pug/variables/variables
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+        title FoadRoad/Resturant
+    body 
+        include pug/layout/header
+
+        section(class='resturant-landing', id='landing')
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='info text-center text-lg-start col-lg-7')
+                        h1(class='heading sen display-3') Discover Resturant
+                        p(class='text-black lh-lg' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                    div(class='image-holder align-self-end relative col-12 col-lg-5 p-0 text-center')
+                        img(src="images/resturant-landing.png",class='', alt="")
+
+        section(class='resturant-find pb-2')
+            div(class='container')
+                div(class='heading m-auto text-center')
+                    h2(class='sen display-4') Let's Find Something Delicious For You
+                    p(class='text-black lh-lg mt-4 mb-5' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                    form
+                        div(class='form-floating relative')
+                            input(type="text", id='searchResturant', class='form-control shadow-none p-0 ps-5 rounded-pill', placeholder='Search Resturant . . .')
+                            label(for='searchResturant') Search Resturant . . .
+                            button(class='icon-holder border-0 d-none d-sm-flex relative rounded-circle d-flex align-items-center justify-content-center')
+                                i(class='icon text-white fa-solid fa-search ')
+
+        section(class='resturant-resturants pt-0')
+            div(class='container')
+                div(class='heading mb-5 d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3')
+                    h2(class='sen display-4 text-center text-sm-start') Recommended Resturant
+                    div(class='filter')
+                        div(class='dropdown')
+                            button(class="btn dropdown-toggle green fw-bold h3 fs-4 rounded-pill py-2 px-4" type="button" data-bs-toggle="dropdown" aria-expanded="false") Filter
+                            ul(class='dropdown-menu')
+                                each val in titles
+                                    li 
+                                        a(class='filter-result dropdown-item pointer')= val
+                                
+
+                div(class='cards d-flex justify-content-center flex-wrap gap-5')
+                    each val in restaurantCards
+                        div(class='card border-0 shadow rounded-4')
+                            div(class='image-holder relative')
+                                img( src=val.imgSrc class="card-img-top" alt="...")
+                                div(class='place rounded-pill py-2 px-4')= val.place
+                            div(class='card-body px-3 py-4')
+                                h5(class='card-title sen fw-bold')= val.title
+                                p(class='card-text text-black lh-lg my-4' style='--bs-text-opacity: .6;')= val.text
+                                div(class='card-bottom d-flex align-items-center justify-content-between gap-3')
+                                    +buttonLink('#', 'View', 'px-4')
+                                    div(class='stars d-flex align-items-center')
+                                        i(class='icon fa-solid fa-star yellow me-1')
+                                        i(class='icon fa-solid fa-star yellow me-1')
+                                        i(class='icon fa-solid fa-star yellow me-1')
+                                        i(class='icon fa-solid fa-star yellow me-1')
+                                        i(class='icon fa-solid fa-star yellow me-1')
+                                        div(class='rate')= `(${val.stars})`
+                    
+        section(class='resturant-delivery')
+            div(class='container')
+                div(class='row justify-content-between align-items-center')
+                    div(class='info col-12 col-lg-6')
+                        h1(class='display-5 sen mb-4') The Best Food Delivery App. Download Now!
+                        p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='apps')
+                            h3(class='heading mt-5 my-4 sen fw-bold') Download Available
+                            img(src="images/google-play-badge.png", alt="", class='pointer')
+                            img(src="images/app-store-badge.png", alt="", class='pointer')
+                    div(class='image-holder mt-5 mt-lg-0 col-12 col-lg-6 relative text-center')
+                        img(src="images/about-delivery.png", alt="")
+                    
+
+        include pug/layout/footer
+        include pug/links/scripts
