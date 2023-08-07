@@ -1,7 +1,7 @@
 @use "../variable/variables.scss" as *;
 
 section.single-landing {
-  background-image: url("../pictures/single-landing.png");
+  background-image: url("../images/single-landing.png");
   min-height: 100vh;
   &::before {
     position: absolute;
