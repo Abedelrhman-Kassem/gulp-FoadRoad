@@ -8,7 +8,7 @@ html(lang="en")
     body 
         include pug/layout/header
                             
-        section(class='single-landing', id='landing')
+        section(class='single-landing', id='landing', style='margin-bottom: 100px;')
             div(class='content w-100 text-center')
                 div(class='icon-holder d-flex align-items-center justify-content-center m-auto rounded-circle')
                     i(class='icon fa-solid fa-utensils text-white')
@@ -31,8 +31,171 @@ html(lang="en")
                         div(class='rate') (5.0)
                 div(class='hours border-start border-2 opensans px-2 px-md-4 px-xl-5')
                     h6 open hours
-                    p(class='m-0 lh-lg text-black', style='--bs-text-opacity: .6;') 11am – 12pm (Mon-Fri)
+                    p(class='m-0 lh-lg text-black', style='--bs-text-opacity: .6;') 11am - 12pm (Mon-Fri)
 
+        section(class='single-discount')
+            div(class='container') 
+                div(class='heading d-flex justify-content-center justify-content-lg-between flex-wrap align-items-center gap-4')
+                    h1(class='sen display-5') Popular Discount
+                    h3(class='count-down sen')
+                        |   Countdown :
+                        span(class='hours ms-3 me-2 green fw-bold')
+                        span(class='fs-5 text-danger', style='--bs-text-opacity: .5;') Hours
+                        span(class='minutes ms-3 me-2 green fw-bold') 
+                        span(class='fs-5 text-danger', style='--bs-text-opacity: .5;') Minutes 
+                        span(class='seconds ms-3 me-2 green fw-bold') 
+                        span(class='fs-5 text-danger', style='--bs-text-opacity: .5;') seconds
+                        
+                div(class='boxs mt-4 p-0 p-xl-5 d-flex align-items-center flex-column flex-lg-row justify-content-center gap-5')
+                    div(class='box overflow-hidden p-4 p-sm-5 relative rounded-5')
+                        h2(class='sen green') Cheese Stuffed Burgers
+                        p(class='opensans my-5 lh-lg text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        div(class='d-flex align-items-center flex-column justify-content-center flex-sm-row justify-content-sm-start gap-5')
+                            h3(class='price fw-bold green') $8.99 #[del(class='text-danger', style='--bs-text-opacity: .5;') 9.99]
+                            +buttonLink('#', 'Order Now', '')
+                        div(class='image-holder rounded-circle overflow-hidden')
+                            img(src="images/single-discount-1.png",class='w-100', alt="")
+                            div(class='rate rounded-pill bg-white py-2 px-4')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                |   (5.0)
+                    
+                    div(class='box overflow-hidden p-1 p-sm-5 relative rounded-5')
+                        h2(class='sen green') Seafood Fried Rice
+                        p(class='opensans my-5 lh-lg text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        div(class='d-flex align-items-center flex-column justify-content-center flex-sm-row justify-content-sm-start gap-5')
+                            h3(class='price fw-bold green') $4.99 #[del(class='text-danger', style='--bs-text-opacity: .5;') 5.99]
+                            +buttonLink('#', 'Order Now', '')
+                        div(class='image-holder rounded-circle overflow-hidden')
+                            img(src="images/single-discount-2.png",class='w-100', alt="")
+                            div(class='rate rounded-pill bg-white py-2 px-4')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star yellow')
+                                i(class='icon fa-solid fa-star text-black', style='--bs-text-opacity: .3;')
+                                |   (4.0)
+
+        section(class='single-foodlist')
+            div(class='container')
+                div(class='heading mb-5 d-flex align-items-center flex-wrap gap-4 justify-content-center justify-content-md-between')
+                    h2(class='sen display-5') Food List For You
+                    .form
+                        div(class='form-floating')
+                            input(class='form-control shadow-none ps-5 p-0 rounded-pill w-100', type="text", id='search', placeholder='Search Food . . .')
+                            label(for="search") Search Food . . . 
+                div(class='food-types mb-5')
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold active', style='--bs-text-opacity: .5;', data-type='all') All
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold', style='--bs-text-opacity: .5;', data-type='pizza') Pizza
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold', style='--bs-text-opacity: .5;', data-type='asian') Asian
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold', style='--bs-text-opacity: .5;', data-type='drink') Drink
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold', style='--bs-text-opacity: .5;', data-type='salad') Salad
+                    span(class='type text-black pointer rounded-pill d-inline-flex justify-content-center align-items-center mx-2 fw-bold', style='--bs-text-opacity: .5;', data-type='burger') Burger
+
+                div(class='cards')
+
+                    div(class='box pizza mb-4 text-center text-md-start shadow rounded-5 p-3 p-lg-4 d-flex align-items-center flex-column flex-md-row gap-4', data-search='Margherita Pizza + Choice of Desserts')
+                        div(class='image-holder')
+                            img(src="images/single-type-2.png",class='rounded-5' alt="")
+                        div(class='info')
+                            h3(class='sen fw-bold ') Margherita Pizza + Choice of Desserts
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            div(class='d-flex align-items-center flex-column flex-md-row  gap-2')
+                                div(class='price green fw-bold h3') $10.99
+                                div(class='stars')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    |   (5.0)
+                                div(class='review text-black', style='--bs-text-opacity: .6;') 5201 Reviews
+                        div(class='icon-holder d-flex align-items-center justify-content-center')
+                            div(class='hold d-flex align-items-center justify-content-center rounded-4 pointer')
+                                i(class='icon fa-solid fa-plus green')
+
+                    div(class='box salad mb-4 text-center text-md-start shadow rounded-5 p-3 p-lg-4 d-flex align-items-center flex-column flex-md-row gap-4', data-search='Hot And Spicy Thai Squid Salad')
+                        div(class='image-holder')
+                            img(src="images/single-type-3.png",class='rounded-5' alt="")
+                        div(class='info')
+                            h3(class='sen fw-bold ') Hot And Spicy Thai Squid Salad
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            div(class='d-flex align-items-center flex-column flex-md-row  gap-2')
+                                div(class='price green fw-bold h3') $10.99
+                                div(class='stars')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    |   (5.0)
+                                div(class='review text-black', style='--bs-text-opacity: .6;') 5201 Reviews
+                        div(class='icon-holder d-flex align-items-center justify-content-center')
+                            div(class='hold d-flex align-items-center justify-content-center rounded-4 pointer')
+                                i(class='icon fa-solid fa-plus green')
+
+                    div(class='box asian mb-4 text-center text-md-start shadow rounded-5 p-3 p-lg-4 d-flex align-items-center flex-column flex-md-row gap-4', data-search='Chicken Teriyaki Sauce With Spiced Rice')
+                        div(class='image-holder')
+                            img(src="images/single-type-4.png",class='rounded-5' alt="")
+                        div(class='info')
+                            h3(class='sen fw-bold ') Chicken Teriyaki Sauce With Spiced Rice
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            div(class='d-flex align-items-center flex-column flex-md-row  gap-2')
+                                div(class='price green fw-bold h3') $10.99
+                                div(class='stars')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    |   (5.0)
+                                div(class='review text-black', style='--bs-text-opacity: .6;') 5201 Reviews
+                        div(class='icon-holder d-flex align-items-center justify-content-center')
+                            div(class='hold d-flex align-items-center justify-content-center rounded-4 pointer')
+                                i(class='icon fa-solid fa-plus green')
+
+                    div(class='box asian salad mb-4 text-center text-md-start shadow rounded-5 p-3 p-lg-4 d-flex align-items-center flex-column flex-md-row gap-4', data-search='Thai Spicy Seafood Salad')
+                        div(class='image-holder')
+                            img(src="images/single-type-5.png",class='rounded-5' alt="")
+                        div(class='info')
+                            h3(class='sen fw-bold ') Thai Spicy Seafood Salad
+                            p(class='opensans text-black lh-lg', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            div(class='d-flex align-items-center flex-column flex-md-row  gap-2')
+                                div(class='price green fw-bold h3') $10.99
+                                div(class='stars')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    i(class='icon fa-solid fa-star yellow')
+                                    |   (5.0)
+                                div(class='review text-black', style='--bs-text-opacity: .6;') 5201 Reviews
+                        div(class='icon-holder d-flex align-items-center justify-content-center')
+                            div(class='hold d-flex align-items-center justify-content-center rounded-4 pointer')
+                                i(class='icon fa-solid fa-plus green')
+
+        section(class='service-delicious')
+            div(class='container')
+                div(class='content row align-items-center justify-content-between')
+                    div(class='info col-12 col-lg-6')
+                        h1(class='heading display-5 sen') Restaurant Testimonial
+                        p(class='opensans text-dark lh-lg fw-regular my-5', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
+                        div(class='box p-4 pt-5 rounded-4 shadow-lg relative m-auto m-md-0 text-center text-md-start')
+                            img(src="images/single-testimonial-card.png", alt="")
+                            p(class='opensans lh-lg text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                            div(class='card-body p-0')
+                                h5(class='d-inline') Mohamed Mostafa 
+                                div(class='stars d-inline ms-2')
+                                    i(class='star fa-solid fa-star yellow me-1')
+                                    i(class='star fa-solid fa-star yellow me-1')
+                                    i(class='star fa-solid fa-star yellow me-1')
+                                    i(class='star fa-solid fa-star yellow me-1')
+                                    i(class='star fa-solid fa-star yellow')
+                    div(class='image-holder mt-5 mt-lg-0 text-center text-lg-start col-12 col-lg-5')
+                        img(src="images/single-testimonial.png", alt="")
 
         include pug/layout/footer
         include pug/links/scripts

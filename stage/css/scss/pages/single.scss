@@ -45,3 +45,101 @@ section.single-landing {
     }
   }
 }
+
+// Start Discount
+
+section.single-discount {
+  .box {
+    background-color: $blurWhite;
+    max-width: 480px;
+    .image-holder {
+      position: relative;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 40%);
+      .rate {
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 173px;
+      }
+    }
+  }
+}
+
+// End Discount
+
+// Start foodlist
+
+section.single-foodlist {
+  .heading {
+    .form-floating {
+      width: 350px;
+      max-width: 350px;
+    }
+  }
+  .food-types {
+    span {
+      width: 100px;
+      height: 50px;
+      transition: 0.3s;
+    }
+    span:hover {
+      --bs-text-opacity: 1 !important;
+      background-color: #89d292;
+    }
+    span.active {
+      color: white !important;
+      --bs-text-opacity: 1 !important;
+      background-color: $mainGreen;
+    }
+  }
+  .cards {
+    @media (max-width: 767px) {
+      & {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 280px);
+        gap: 30px;
+      }
+    }
+    .box {
+      .icon-holder {
+        min-width: 100px;
+        .hold {
+          width: 60px;
+          height: 60px;
+          background: $blurWhite;
+          transition: 0.3s;
+          &:hover {
+            background-color: $mainGreen;
+          }
+          &:hover .icon {
+            color: white !important;
+          }
+          .icon {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// End foodlist
+
+// Start Dilicious
+
+section.service-delicious {
+  .info {
+    .box {
+      img {
+        position: absolute;
+        transform: translateY(-125%);
+      }
+    }
+  }
+}
+
+// Etart Dilicious

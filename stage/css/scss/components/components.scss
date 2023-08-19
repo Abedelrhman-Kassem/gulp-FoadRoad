@@ -44,7 +44,8 @@ header,
   background-color: $blurWhite;
 }
 
-form {
+form,
+.form {
   .form-control:focus {
     border-color: $mainGreen;
   }
@@ -55,9 +56,18 @@ form {
   .form-floating > .form-control:not(:placeholder-shown) ~ label {
     transform: scale(0.85) translateY(-1.5rem) translateX(0.15rem);
   }
-  label {
+  label:not(.form-check-label) {
     transform: translate(2rem, 0rem);
     color: grey;
+    font-family: "roboto", sans-serif;
+  }
+  .form-check-input {
+    box-shadow: none;
+  }
+  .form-check-input:checked {
+    box-shadow: none;
+    background-color: $mainGreen;
+    border-color: $mainGreen;
   }
 }
 
@@ -99,6 +109,18 @@ form {
   right: 0;
   top: 0;
   transform: translateY(-50%);
+}
+
+// accordions
+.accordion {
+  .accordion-item {
+    .accordion-button::after {
+      display: none;
+    }
+    .accordion-button:not(.collapsed) {
+      background-color: white !important;
+    }
+  }
 }
 
 // Fonts

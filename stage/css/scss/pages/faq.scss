@@ -1,0 +1,67 @@
+@use "../variable/variables.scss" as *;
+
+section.faq-landing {
+  form {
+    .icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-3%, -50%);
+      @media (max-width: 575px) {
+        & {
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+section.faq-frequently {
+  .boxs {
+    .box {
+      width: 24%;
+      min-width: 250px;
+      background-color: $blurWhite;
+      transition: 0.3s;
+      &:hover {
+        background-color: $mainGreen;
+      }
+      &:hover .icon {
+        color: white !important;
+      }
+      &:hover h5 {
+        color: white;
+      }
+      h5 {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+section.faq-questions {
+  .customer {
+    background-color: $blurWhite;
+    .icon-holder {
+      background-color: $mainGreen;
+      .icon {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .form {
+    .form-floating {
+      textarea {
+        height: 200px;
+        resize: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+doctype html
+include pug/components/mixins
+include pug/variables/variables
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+        title FoadRoad/Our Team
+    body 
+        include pug/layout/header
+
+        section(class='team-landing', id='landing')
+            img(src="images/green-thing.png",class='d-none green-thing d-lg-block' alt="")
+            div(class='container')
+                div(class='row align-items-center justify-content-between')
+                    div(class='info text-center text-lg-start col-lg-5')
+                        h1(class='heading sen display-2') Our Team
+                        p(class='text-black lh-lg' style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                    div(class='image-holder align-self-end relative col-12 col-lg-7 p-0 text-center')
+                        img(src="images/landing-team.png",class='', alt="")
+
+        section(class='team-introduce')
+            div(class='container')
+                div(class='heading mx-auto mb-5 text-center')
+                    h1(class='sen display-3') Introduce Our Team
+                    p(class='opensans lh-lg text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                div(class='persons text-center d-flex justify-content-evenly flex-wrap gap-3')
+
+                    each val in persons
+
+                        div(class='person')
+                            div(class='image-holder mb-5 rounded-circle p-4 p-sm-5')
+                                img(src=val.imgSrc, class='rounded-circle', alt="")
+                            h3(class='green fw-bold')= val.name
+                            p(class='opensans lh-lg text-black', style='--bs-text-opacity: .6;')= val.job 
+
+        section(class='team-work')
+            div(class='container')
+                h1(class='sen display-3 mb-5 text-center') Work With us
+                div(class=' boxs d-flex flex-wrap justify-content-evenly gap-4 text-center')
+                    
+                    div(class='box p-3 p-sm-5  rounded-5 shadow')
+                        h3(class='sen fw-bold green') Become Driver
+                        p(class='opensans lh-lg my-4 text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                        +buttonLink('#','Learn More','mx-auto')
+                    
+                    div(class='box p-3 p-sm-5  rounded-5 shadow')
+                        h3(class='sen fw-bold green') Become Partner
+                        p(class='opensans lh-lg my-4 text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                        +buttonLink('#','Learn More','mx-auto')
+                    
+                    div(class='box p-3 p-sm-5  rounded-5 shadow')
+                        h3(class='sen fw-bold green') Become Merchant
+                        p(class='opensans lh-lg my-4 text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                        +buttonLink('#','Learn More','mx-auto')
+
+        section(class='team-great')
+            div(class='container')
+                div(class='row align-items-center justify-content-between text-center text-lg-start')
+                    div(class='info col-12 col-lg-6 mb-5 mb-lg-0')
+                        h2(class='sen display-4') Let's Make Something Great With us!
+                        p(class='opensans lh-lg my-4 text-black', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                        div(class='d-flex align-items-center justify-content-center justify-content-lg-start flex-wrap  gap-4')
+                            +buttonLink('#','Join Our Team','px-5')
+                            div(class='box-1 rounded-4 p-3 shadow-lg d-flex align-items-center gap-3 bg-white')
+                                img(src="images/badge-serve.png", alt="")  
+                                h5(class='sen m-0 fw-bold') We Are Number 1
+                    div(class='image-holder mx-ato relative col-12 col-lg-5 p-0')
+                        img(src="images/team-great.png", alt="")
+                        
+
+        include pug/layout/footer
+        include pug/links/scripts
+        

@@ -50,19 +50,3 @@ section.service-delicious {
 }
 
 // End Delicious
-// Start Frequently
-
-section.service-frequently {
-  .accordion {
-    .accordion-item {
-      .accordion-button::after {
-        display: none;
-      }
-      .accordion-button:not(.collapsed) {
-        background-color: white !important;
-      }
-    }
-  }
-}
-
-// End Frequently

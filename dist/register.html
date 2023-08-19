@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&amp;family=Open+Sans:wght@400;600&amp;family=Poppins:wght@600&amp;family=Roboto:wght@400;500;700&amp;family=Sen:wght@400;700;800&amp;family=Work+Sans&amp;display=swap" rel="stylesheet">
+    <title>FoadRoad/Register</title>
+  </head>
+  <body> 
+    <main class="register row mx-0 justify-content-between mw-100 vh-100 mh- gap-5 px-sm-4 pe-lg-0 ps-lg-4" id="login">
+      <div class="info col-12 col-xl-5 d-flex align-items-center justify-content-center flex-column gap-4"><a class="navbar-brand d-flex align-items-center" href="index.html"><img class="img-logo d-none d-sm-block" src="images/logo.png">
+          <h1 class="h1-logo green sen fw-bold m-0">Food<span class="logo-span yellow">Road</span></h1></a>
+        <h1 class="sen display-2 green">Register</h1>
+        <p class="opensans lh-lg text-black" style="--bs-text-opacity: .6;">Let’s Sign up first for enter into Food Road Website. Uh She Up!</p>
+        <form class="w-100 d-flex flex-wrap justify-content-between gap-2">
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="text" placeholder="First Name" id="firstName" required>
+            <label for="firstName">First Name </label>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="text" placeholder="Last Name" id="lastName" required>
+            <label for="lastName">Last Name </label>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="text" placeholder="Phone Number" id="phone" required>
+            <label for="phone">Phone Number</label>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <select class="form-select form-control shadow-none rounded-pill p-0 ps-3" id="country">
+              <option value="egypt">Egypt </option>
+              <option value="qatar">Qatar </option>
+              <option value="libya">Libya </option>
+              <option value="saudi arabia">Saudi Arabia </option>
+            </select>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 w-100">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="mail" placeholder="Mail Address" id="mail" required>
+            <label for="mail">Mail Address </label>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="password" placeholder="Password" id="pass" required>
+            <label for="pass">Password</label>
+          </div>
+          <div class="form-floating mb-4 flex-grow-1 mw-45">
+            <input class="form-control shadow-none rounded-pill p-0 ps-3" type="password" placeholder="Confirm Password" id="confirm-pass" required>
+            <label for="confirm-pass">Confirm Password </label>
+          </div>
+          <div class="form-check w-100 mb-4">
+            <input class="form-check-input pointer" type="checkbox" id="flexCheckDefault" required>
+            <label class="form-check-label pointer" for="flexCheckDefault">I agree to Square’s <a class="text-decoration-none yellow" href="#">Cookie</a> and <a class="text-decoration-none yellow" href="#">Privacy Policy</a>.</label>
+          </div><a class="btn btn-secondary rounded-pill px-5" href="login.html">Login</a>
+          <button class="btn text-white rounded-pill flex-grow-1">Get Started</button>
+        </form>
+      </div>
+      <div class="image-holder col-xl-6 relative d-none d-xl-block px-0"><img src="images/register.png">
+        <div class="overlay"></div>
+      </div>
+    </main>
+    <script src="js/main-min.js"> </script>
+    <script src="js/all.min.js"> </script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
+  </body>
+</html>

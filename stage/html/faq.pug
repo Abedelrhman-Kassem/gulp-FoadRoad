@@ -1,0 +1,110 @@
+doctype html
+include pug/components/mixins
+html(lang="en")
+    head
+        include pug/links/styles
+        include pug/links/fonts
+        title FoadRoad/FAQ
+    body 
+        include pug/layout/header
+
+        section(class='faq-landing', id='landing')
+            div(class='container')
+                h1(class='sen display-2 text-center mb-4') Hello, How Can we Help?
+                p(class='opensans mb-4 text-center lh-lg text-black mx-auto', style='--bs-text-opacity: .6; max-width: 500px;') Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+                form
+                    div(class='form-floating mb-3 opensans mx-auto', style='max-width: 800px')
+                        i(class='icon fa-solid fa-search fa-lg green')
+                        input(class='form-control p-0 ps-5 rounded-pill shadow-none', type='text', id='search', placeholder='Search Question')
+                        label(for="floatingsearchName") Search Question
+                        button(class='common-a px-5 border-0 opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center', type='submit') Search
+
+        section(class='faq-frequently')
+            div(class='container')
+                h2(class='sen display-4 text-center mb-5') Frequently Asked Questions
+                div(class='boxs text-center d-flex flex-wrap justify-content-center justify-content-lg-between gap-2')
+                    div(class='box rounded-5 p-5 py-4 d-flex align-items-center justify-content-center flex-column gap-3')
+                        i(class="icon mx-auto mb-4 fs-1 d-block fa-solid fa-utensils text-secondary")
+                        h5(class='sen mb-0 fw-bold') Getting Started
+                    div(class='box rounded-5 p-5 py-4 d-flex align-items-center justify-content-center flex-column gap-3')
+                        i(class="icon mx-auto mb-4 fs-1 d-block fa-solid fa-hand-holding-dollar text-secondary")
+                        h5(class='sen mb-0 fw-bold') Pay & Subscribe
+                    div(class='box rounded-5 p-5 py-4 d-flex align-items-center justify-content-center flex-column gap-3')
+                        i(class="icon mx-auto mb-4 fs-1 d-block fa-solid fa-car text-secondary")
+                        h5(class='sen mb-0 fw-bold') Driver Question
+                    div(class='box rounded-5 p-5 py-4 d-flex align-items-center justify-content-center flex-column gap-3')
+                        i(class="icon mx-auto mb-4 fs-1 d-block fa-solid fa-champagne-glasses text-secondary")
+                        h5(class='sen mb-0 fw-bold') Partner Question
+                
+                div(class='accordion accordion-flush mt-5 border-1 border-bottom', id='accordionPanelsStayOpenExample')
+
+                            div(class='accordion-item')
+                                h2(class='accordion-header')
+                                    button(class='accordion-button collapsed justify-content-between green fw-bold fs-3 shadow-none', type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne") How Long Does It Take For A Delivery? #[i(class='icon fa-solid fa-minus')]
+                                div(id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show")
+                                    div(class='accordion-body lh-lg text-black opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex enim, euismod a lobortis nec, hendrerit in lectus. Morbi dapibus faucibus elit, sed ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a lacinia leo. Phasellus et malesuada mauris.
+                                                    
+                            div(class='accordion-item')
+                                h2(class='accordion-header')
+                                    button(class='accordion-button collapsed justify-content-between gap-3 green fw-bold fs-3 shadow-none', type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo") What Kind Payment Available? #[i(class='icon fa-solid fa-plus')]
+                                div( id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse")
+                                    div(class='accordion-body lh-lg text-black opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex enim, euismod a lobortis nec, hendrerit in lectus. Morbi dapibus faucibus elit, sed ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a lacinia leo. Phasellus et malesuada mauris.
+                                
+                            div(class='accordion-item')
+                                h2(class='accordion-header')
+                                    button(class='accordion-button collapsed justify-content-between gap-3 green fw-bold fs-3 shadow-none', type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree") Do You Have A Delivery Free? #[i(class='icon fa-solid fa-plus')]
+                                div(id="panelsStayOpen-collapseThree" class="accordion-collapse collapse")
+                                    div(class='accordion-body lh-lg text-black opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex enim, euismod a lobortis nec, hendrerit in lectus. Morbi dapibus faucibus elit, sed ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a lacinia leo. Phasellus et malesuada mauris.
+                                
+                            div(class='accordion-item')
+                                h2(class='accordion-header')
+                                    button(class='accordion-button collapsed justify-content-between gap-3 green fw-bold fs-3 shadow-none', type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour") Are The Prices Different Than At The Restaurant? #[i(class='icon fa-solid fa-plus')]
+                                div(id="panelsStayOpen-collapseFour" class="accordion-collapse collapse")
+                                    div(class='accordion-body lh-lg text-black opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex enim, euismod a lobortis nec, hendrerit in lectus. Morbi dapibus faucibus elit, sed ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a lacinia leo. Phasellus et malesuada mauris.
+                                
+                            div(class='accordion-item')
+                                h2(class='accordion-header')
+                                    button(class='accordion-button collapsed justify-content-between gap-3 green fw-bold fs-3 shadow-none', type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive") What If The Restaurant Has Changed Its Prices? #[i(class='icon fa-solid fa-plus')]
+                                div(id="panelsStayOpen-collapseFive" class="accordion-collapse collapse")
+                                    div(class='accordion-body lh-lg text-black opensans', style='--bs-text-opacity: .6;') Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ex enim, euismod a lobortis nec, hendrerit in lectus. Morbi dapibus faucibus elit, sed ultricies libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam a lacinia leo. Phasellus et malesuada mauris.
+
+        section(class='faq-questions')
+            div(class='container')
+                div(class='row justify-content-between align-items-center')
+                    div(class='customer col-12 col-lg-5 p-5 p-lg-g rounded-5')
+                        h1(class='sen fw-bold green mb-4') Customer Service
+                        div(class='border-bottom py-4')
+                            div(class='call mb-4 d-flex align-items-center gap-4')
+                                div(class='icon-holder rounded-circle p-4')
+                                    i(class='icon fa-solid fa-phone-flip text-white fs-1')
+                                h3(class='number sen') (316) 516-6137
+                            div(class='call mb-4 d-flex align-items-center gap-4')
+                                div(class='icon-holder rounded-circle p-4')
+                                    i(class='icon fa-solid fa-phone-flip text-white fs-1')
+                                h3(class='number sen') (316) 267-2517
+                            div(class='call mb-4 d-flex align-items-center gap-4')
+                                div(class='icon-holder rounded-circle p-4')
+                                    i(class='icon fa-solid fa-phone-flip text-white fs-1')
+                                h3(class='number sen') (316) 555-0116
+                        h3(class='sen mt-5') Monday - Friday (8AM-7PM)
+                    div(class='form col-12 col-lg-6')
+                        h2(class='sen display-5 mb-5') Still Have a Questions?
+                        form
+                            div(class='form-floating mb-4')
+                                input(class='form-control rounded-pill ps-5 p-0  shadow-none w-100', type='text', id='name', placeholder='Your Name')
+                                label(for="name") Your Name 
+
+                            div(class='form-floating mb-4')
+                                input(class='form-control rounded-pill ps-5 p-0  shadow-none w-100', type='email', id='email', placeholder='Email Address')
+                                label(for="email") Email Address
+
+                            div(class='form-floating mb-4')
+                                textarea(class='form-control rounded-5 ps-5  shadow-none w-100', type='text', id='textarea', placeholder='Your Questions')
+                                label(for="textarea") Your Questions 
+
+                            button(class='common-a w-100 px-5 border-0 opensans text-white rounded-pill fw-semibold text-decoration-none d-flex align-items-center justify-content-center', type='submit') Send Now
+
+
+
+        include pug/layout/footer
+        include pug/links/scripts

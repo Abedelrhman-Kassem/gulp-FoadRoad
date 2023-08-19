@@ -5,16 +5,16 @@
     background-color: $blurWhite;
     .form-floating {
       width: 46%;
+      @media (max-width: 991px) {
+        & {
+          width: 100% !important;
+        }
+      }
       textarea {
         resize: none;
         height: 200px;
       }
     }
-  }
-}
-@media (max-width: 991px) {
-  .form-floating {
-    width: 100% !important;
   }
 }
 
