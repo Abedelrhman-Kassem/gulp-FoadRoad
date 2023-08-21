@@ -29,8 +29,7 @@ if (document.title == "FoadRoad/Home") {
   function cardsWidth(cards) {
     let requireWidth = 0;
     for (let i = 0; i < 1; ) {
-      if (container.offsetWidth < requireWidth) {
-        requireWidth -= card.offsetWidth + 20;
+      if (container.offsetWidth < requireWidth + card.offsetWidth + 20) {
         break;
       } else {
         requireWidth += card.offsetWidth + 20;
