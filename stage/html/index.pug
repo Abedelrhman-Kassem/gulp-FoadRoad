@@ -118,16 +118,16 @@ html(lang="en")
 
         section(class='home-delicious')
             div(class='container')
-                div(class='heading mb-5 d-flex align-items-center justify-content-between')
+                div(class='heading d-flex align-items-center justify-content-between')
                     h1(class='sen display-3') Delicious Food For You
                     div(class='arrows display-5 d-flex gap-3')
-                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-left')
-                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-right')  
-                div(class='cards d-flex justify-content-center flex-wrap gap-4')
+                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-left', id='left')
+                        i(class='slider-arrow pointer py-1 px-3 rounded-3 fa-solid fa-angle-right', id = 'right')  
+                div(class='cards mx-auto px-sm-2 overflow-hidden py-4 d-flex gap-4')
 
                     each val in resturantCard
 
-                        div(class='card rounded-4 overflow-hidden shadow border-0', style='width: 18rem;')
+                        div(class='card rounded-4 overflow-hidden shadow border-0')
                             div(class='image-holder relative')
                                 img(src=val.imgSrc, alt="")
                                 +overlay('')

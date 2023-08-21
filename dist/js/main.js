@@ -5,6 +5,41 @@ links.forEach(
   (link) => link.innerHTML === title && link.classList.add("active")
 );
 
+// Start Home Page
+if (document.title == "FoadRoad/Home") {
+  let container = document.querySelector(".container"),
+    cards = document.querySelector(".home-delicious .cards"),
+    card = document.querySelector(".home-delicious .card");
+
+  window.onload = () => {
+    let buttons = document.querySelectorAll(".home-delicious .slider-arrow");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        cards.scrollLeft +=
+          btn.id === "left" ? -(card.offsetWidth + 25) : card.offsetWidth + 25;
+      });
+    });
+  };
+
+  cardsWidth(cards);
+
+  window.onresize = () => cardsWidth(cards);
+
+  // fit cards div to the right card number
+  function cardsWidth(cards) {
+    let requireWidth = 0;
+    for (let i = 0; i < 1; ) {
+      if (container.offsetWidth < requireWidth) {
+        requireWidth -= card.offsetWidth + 20;
+        break;
+      } else {
+        requireWidth += card.offsetWidth + 20;
+      }
+    }
+    cards.style.width = requireWidth + "px";
+  }
+}
+
 // Start Service Page Page And FAQ Page
 if (document.title == "FoadRoad/Service" || document.title == "FoadRoad/FAQ") {
   // Accordions Service Page And FAQ Page
@@ -203,3 +238,11 @@ if (
   let copyRight = document.querySelector("footer .finals .copyright");
   copyRight.innerHTML = `Copyright © ${new Date().getFullYear()} FoodRoad Food delivery`;
 }
+
+let sections = document.querySelectorAll("section");
+document.querySelector("section").classList.add("show");
+window.addEventListener("scroll", () => {
+  sections.forEach((sec) => {
+    sec.classList.toggle("show", sec.getBoundingClientRect().top < 600);
+  });
+});

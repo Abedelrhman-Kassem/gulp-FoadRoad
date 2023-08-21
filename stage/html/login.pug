@@ -6,7 +6,7 @@ html(lang="en")
         include pug/links/fonts
         title FoadRoad/Sign in
     body 
-        main(class='row mx-0 justify-content-between mw-100 vh-100 mh- gap-5 px-sm-4 pe-lg-0 ps-lg-5', id='login')
+        section(class='row mx-0 justify-content-between mw-100 vh-100 pt-0 gap-5 px-sm-4 pe-lg-0 ps-lg-5', id='login')
             div(class='info col-12 col-lg-5 d-flex align-items-center justify-content-center flex-column gap-4')
                 +logo
                 h1(class='sen display-2 yellow') Sign In
@@ -17,7 +17,7 @@ html(lang="en")
                         label(for="username") Your Email / Username 
                     
                     div(class='form-floating mb-4')
-                        input(class='form-control shadow-none rounded-pill py-0 px-4', required, type="password", id='password', placeholder='Enter Password')
+                        input(class='password form-control shadow-none rounded-pill py-0 px-4', required, type="password", id='password', placeholder='Enter Password')
                         label(for="password") Enter Password 
                     
                     div(class='d-flex align-items-center justify-content-between mb-4')

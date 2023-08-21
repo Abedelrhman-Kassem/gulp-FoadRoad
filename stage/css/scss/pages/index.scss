@@ -136,23 +136,41 @@ section.home-menu {
 // Start Delicious
 
 section.home-delicious {
-  .heading {
-    .slider-arrow {
-      background-color: $blurWhite;
-      transition: 0.3s;
-      &:hover {
-        background-color: $mainGreen;
-        color: $white;
+  .container {
+    @media (width <= 576px) {
+      & {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
       }
     }
-  }
-  .cards {
-    .card {
-      width: 30%;
-      min-width: 350px;
-      .common-a {
-        padding-left: 1.5rem !important;
-        padding-right: 1.5rem !important;
+    .heading {
+      .slider-arrow {
+        background-color: $blurWhite;
+        transition: 0.3s;
+        &:hover {
+          background-color: $mainGreen;
+          color: $white;
+        }
+      }
+    }
+    .cards {
+      @media (width <= 576px) {
+        & {
+          width: 270px !important;
+        }
+      }
+      .card {
+        // width: 30%;
+        min-width: 350px;
+        @media (width <= 576px) {
+          & {
+            min-width: 270px;
+          }
+        }
+        .common-a {
+          padding-left: 1.5rem !important;
+          padding-right: 1.5rem !important;
+        }
       }
     }
   }

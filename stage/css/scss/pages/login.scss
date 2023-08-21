@@ -2,15 +2,6 @@
 
 #login {
   font-family: "roboto", sans-serif;
-  form,
-  .form {
-    #password:focus {
-      border-color: #fc5a5a;
-    }
-  }
-  #password:focus ~ label {
-    color: #fc5a5a !important;
-  }
   .submit {
     background-color: $mainGreen;
   }
